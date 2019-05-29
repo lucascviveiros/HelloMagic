@@ -1,0 +1,276 @@
+{
+ "entries": [
+  {
+   "compression": 8,
+   "hash": "492297a509a22b2a577a4cb5a23618ce4c24b7d8",
+   "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
+   "size": 3090648,
+   "src": "/Users/samhoud/Desktop/HelloMagic/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "39c538eff8b615823fdf0a50aa3c02c7232cba1a",
+   "pkgpath": "bin/libil2cpp.so",
+   "size": 45996608,
+   "src": "/Users/samhoud/Desktop/HelloMagic/Temp/StagingArea/Data/Native/libil2cpp.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/samhoud/Downloads/privatekey/hellomagicleap.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "4b6e07e7d826a075509560736f7ac96e2b51949e",
+   "xfrm_path": "/Users/samhoud/Desktop/HelloMagic/.out/.cache/debug_lumin_clang-3.8_aarch64/com.samhoud.testapp-2d61555a68fada44/libil2cpp.so-5c814eab0d8001fe",
+   "xfrm_size": 45997366
+  },
+  {
+   "compression": 8,
+   "hash": "6b3b1067e8eeb28457c572292a209cc931e93089",
+   "pkgpath": "bin/AudioPluginMSASpatializer.so",
+   "size": 269360,
+   "src": "/Users/samhoud/Desktop/HelloMagic/Temp/StagingArea/Data/Plugins/AudioPluginMSASpatializer.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/samhoud/Downloads/privatekey/hellomagicleap.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "7fd570b5779ebc32a8e30285273043eb051b8a94",
+   "xfrm_path": "/Users/samhoud/Desktop/HelloMagic/.out/.cache/debug_lumin_clang-3.8_aarch64/com.samhoud.testapp-2d61555a68fada44/AudioPluginMSASpatializer.so-f0b9cd805a24b2b7",
+   "xfrm_size": 270118
+  },
+  {
+   "compression": 8,
+   "hash": "451a2617c57c859bc6555a63abf2a0a0a30c010f",
+   "pkgpath": "bin/UnityEngine.TestRunner.dll",
+   "size": 100864,
+   "src": "/Users/samhoud/Desktop/HelloMagic/Temp/StagingArea/Data/Plugins/UnityEngine.TestRunner.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "06995ecae530eca2b6f5337b27dbdfcb727599da",
+   "pkgpath": "bin/UnityMagicLeap.so",
+   "size": 1495800,
+   "src": "/Users/samhoud/Desktop/HelloMagic/Temp/StagingArea/Data/Plugins/UnityMagicLeap.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/samhoud/Downloads/privatekey/hellomagicleap.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "ce77d991ccb81c9879c1759bfc5374ed6dcc7131",
+   "xfrm_path": "/Users/samhoud/Desktop/HelloMagic/.out/.cache/debug_lumin_clang-3.8_aarch64/com.samhoud.testapp-2d61555a68fada44/UnityMagicLeap.so-f0b9cd805a24b2b7",
+   "xfrm_size": 1496558
+  },
+  {
+   "compression": 8,
+   "hash": "e36553e9a3113280d39db515a350a0036cda878d",
+   "pkgpath": "bin/libml_camera_plugin.so",
+   "size": 14184,
+   "src": "/Users/samhoud/Desktop/HelloMagic/Temp/StagingArea/Data/Plugins/libml_camera_plugin.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/samhoud/Downloads/privatekey/hellomagicleap.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "34427863b6121c7b49fd93a19a02b0b179646a34",
+   "xfrm_path": "/Users/samhoud/Desktop/HelloMagic/.out/.cache/debug_lumin_clang-3.8_aarch64/com.samhoud.testapp-2d61555a68fada44/libml_camera_plugin.so-f0b9cd805a24b2b7",
+   "xfrm_size": 14942
+  },
+  {
+   "compression": 8,
+   "hash": "0ee8bd5ed3f83c8d11c84a597fb375ec525b0642",
+   "pkgpath": "bin/libml_mediaplayer_plugin.so",
+   "size": 67624,
+   "src": "/Users/samhoud/Desktop/HelloMagic/Temp/StagingArea/Data/Plugins/libml_mediaplayer_plugin.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/samhoud/Downloads/privatekey/hellomagicleap.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "220916b1692bd395135c9a06da7498440d904090",
+   "xfrm_path": "/Users/samhoud/Desktop/HelloMagic/.out/.cache/debug_lumin_clang-3.8_aarch64/com.samhoud.testapp-2d61555a68fada44/libml_mediaplayer_plugin.so-f0b9cd805a24b2b7",
+   "xfrm_size": 68382
+  },
+  {
+   "compression": 8,
+   "hash": "984e4d2049ed5491b970ba15d1e8c8cadac0896e",
+   "pkgpath": "bin/nunit.framework.dll",
+   "size": 339968,
+   "src": "/Users/samhoud/Desktop/HelloMagic/Temp/StagingArea/Data/Plugins/nunit.framework.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "e6124da6073b916e29e013cf3ae3f58a4c5fdb0e",
+   "pkgpath": "Data/Resources/mscorlib.dll-resources.dat",
+   "size": 337563,
+   "src": "/Users/samhoud/Desktop/HelloMagic/Temp/StagingArea/Data/Resources/mscorlib.dll-resources.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "63c7ca62020949b1c87b1439f31b7a9719db98c1",
+   "pkgpath": "Data/Resources/unity default resources",
+   "size": 3652028,
+   "src": "/Users/samhoud/Desktop/HelloMagic/Temp/StagingArea/Data/Resources/unity default resources"
+  },
+  {
+   "compression": 8,
+   "hash": "ff46359fc500e049636a9a844bd0ff1b3844a7ce",
+   "pkgpath": "Data/Resources/unity_builtin_extra",
+   "size": 754668,
+   "src": "/Users/samhoud/Desktop/HelloMagic/Temp/StagingArea/Data/Resources/unity_builtin_extra"
+  },
+  {
+   "compression": 8,
+   "hash": "07a1a6072f5e1bb3a3f4905632232dc66e76c2d5",
+   "pkgpath": "Data/UnitySubsystems/UnityMagicLeap/UnitySubsystemsManifest.json",
+   "size": 168,
+   "src": "/Users/samhoud/Desktop/HelloMagic/Temp/StagingArea/Data/UnitySubsystems/UnityMagicLeap/UnitySubsystemsManifest.json"
+  },
+  {
+   "compression": 8,
+   "hash": "9f9d9fdfae69214ea57a2416e60a9fe924367caa",
+   "pkgpath": "Data/boot.config",
+   "size": 144,
+   "src": "/Users/samhoud/Desktop/HelloMagic/Temp/StagingArea/Data/boot.config"
+  },
+  {
+   "compression": 8,
+   "hash": "bdd3912d94814807db51d71f2fca20aed07fb36b",
+   "pkgpath": "Data/globalgamemanagers",
+   "size": 45664,
+   "src": "/Users/samhoud/Desktop/HelloMagic/Temp/StagingArea/Data/globalgamemanagers"
+  },
+  {
+   "compression": 8,
+   "hash": "b516c29d6065cc9a635b30ea049aa2b34adba150",
+   "pkgpath": "Data/globalgamemanagers.assets",
+   "size": 67792,
+   "src": "/Users/samhoud/Desktop/HelloMagic/Temp/StagingArea/Data/globalgamemanagers.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "7a1218159ebf7e9539e634e0dfe2a2e6bf3ea2ff",
+   "pkgpath": "Data/level0",
+   "size": 17868,
+   "src": "/Users/samhoud/Desktop/HelloMagic/Temp/StagingArea/Data/level0"
+  },
+  {
+   "compression": 8,
+   "hash": "0ca83cd229c6213671a5be92642bf96583e30f3e",
+   "pkgpath": "Data/resources.assets",
+   "size": 19128,
+   "src": "/Users/samhoud/Desktop/HelloMagic/Temp/StagingArea/Data/resources.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "f4ce785d29d24c54555cb4aa9fed0d8d2dee1fad",
+   "pkgpath": "Data/resources.assets.resS",
+   "size": 360480,
+   "src": "/Users/samhoud/Desktop/HelloMagic/Temp/StagingArea/Data/resources.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "7c1528cfe443f7c8bc078fcabb0c2bcea4b86ee2",
+   "pkgpath": "Data/sharedassets0.assets",
+   "size": 1496744,
+   "src": "/Users/samhoud/Desktop/HelloMagic/Temp/StagingArea/Data/sharedassets0.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "ab6e3de200e35497746ed505f60ffd47b2494b74",
+   "pkgpath": "Data/sharedassets0.assets.resS",
+   "size": 8863264,
+   "src": "/Users/samhoud/Desktop/HelloMagic/Temp/StagingArea/Data/sharedassets0.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "6bea85827263fca07a7815ff263c5316bf16139e",
+   "pkgpath": "bin/Player.elf",
+   "size": 20267912,
+   "src": "/Users/samhoud/Desktop/HelloMagic/Temp/StagingArea/Player.elf",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/samhoud/Downloads/privatekey/hellomagicleap.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "45d3e747c76aa2c2fb033fa74f1b6ee00f8f7b2b",
+   "xfrm_path": "/Users/samhoud/Desktop/HelloMagic/.out/.cache/debug_lumin_clang-3.8_aarch64/com.samhoud.testapp-2d61555a68fada44/Player.elf-e758d760ed733741",
+   "xfrm_size": 20268670
+  },
+  {
+   "compression": 8,
+   "hash": "71642b15b83c0fe1a9d3687896715dfe7415e7a4",
+   "pkgpath": "manifest.xml",
+   "size": 3387,
+   "src": "/Users/samhoud/Desktop/HelloMagic/Temp/StagingArea/manifest.xml",
+   "xfrm_flags": {
+    "manifest": {
+     "cert_hash": "d425ea427a07fc6c7e8aaa7925f65f082eb86a11",
+     "developer_id": "4f9fcfb8-7ba1-44cb-9108-fb2851df2241"
+    }
+   },
+   "xfrm_hash": "11cb05a5c50d4470749e458595b0095d86b06a4d",
+   "xfrm_path": "/Users/samhoud/Desktop/HelloMagic/.out/.cache/debug_lumin_clang-3.8_aarch64/com.samhoud.testapp-2d61555a68fada44/manifest.xml-e758d760ed733741",
+   "xfrm_size": 1128
+  },
+  {
+   "compression": 8,
+   "hash": "5925de9f4d7b83c65d1fd7b25ced5f0bf8c27e73",
+   "pkgpath": "bin/libc++_shared.so",
+   "size": 976832,
+   "src": "/Users/samhoud/MagicLeap/mlsdk/v0.20.0/lumin/stl/libc++/lib/libc++_shared.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "/Users/samhoud/Downloads/privatekey/hellomagicleap.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "1426e1e9f38bc1571ccc96a310c37fd237599f20",
+   "xfrm_path": "/Users/samhoud/Desktop/HelloMagic/.out/.cache/debug_lumin_clang-3.8_aarch64/com.samhoud.testapp-2d61555a68fada44/libc++_shared.so-bf9491a76782d457",
+   "xfrm_size": 977590
+  }
+ ],
+ "pkgflags": {
+  "signed": {
+   "cert": "/Users/samhoud/Downloads/privatekey/hellomagicleap.cert"
+  },
+  "taildata": {
+   "debuggable": true,
+   "devcert": "/Users/samhoud/Downloads/privatekey/hellomagicleap.cert",
+   "sbox": "USER",
+   "version": 3
+  }
+ }
+}

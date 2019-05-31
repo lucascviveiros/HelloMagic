@@ -24,44 +24,28 @@ namespace UnityEngine.XR.MagicLeap
     public class MLPersistentBehavior : MonoBehaviour
     {
         #region Public Enumerations
-        /// <summary>
         /// Possible states of the MLPersistentBehavior
-        /// </summary>
         public enum Status
         {
-            /// <summary>
             /// Binding created and saved successfully
-            /// </summary>
             BINDING_CREATED,
 
-            /// <summary>
             /// Binding updated successfully
-            /// </summary>
             BINDING_UPDATED,
 
-            /// <summary>
             /// Binding destroyed succesfully
-            /// </summary>
             BINDING_DESTROYED,
 
-            /// <summary>
             /// Failed to create binding
-            /// </summary>
             BINDING_CREATE_FAILED,
 
-            /// <summary>
             /// Restoration successful
-            /// </summary>
             RESTORE_SUCCESSFUL,
 
-            /// <summary>
             /// Restoration failed
-            /// </summary>
             RESTORE_FAILED,
 
-            /// <summary>
             /// Restoration retry
-            /// </summary>
             RESTORE_RETRY,
         }
         #endregion
@@ -70,34 +54,24 @@ namespace UnityEngine.XR.MagicLeap
         [Tooltip("Unique id for this persistent behavior. If not provided, the name of the GameObject would be used")]
         public string UniqueId;
 
-        /// <summary>
         /// Retry timeout.
-        /// <summary/>
         public float TimeOutInSeconds = 5.0f;
 
-        /// <summary>
         /// Delay to retry when failing to restore
-        /// </summary>
         public float RetryDelayInSeconds = 2.0f;
 
-        /// <summary>
         /// Number of times to retry when failing to restore
-        /// </summary>
         public int NumRetriesForRestore = 3;
         #endregion
 
         #region Public Properties
-        /// <summary>
         /// Gets the binding.
-        /// </summary>
         /// <value>The binding.</value>
         public MLContentBinding Binding { get; private set; }
         #endregion
 
         #region Public Events
-        /// <summary>
         /// This event is raised when the state of the MLPersistentBehavior has changed.
-        /// </summary>
         public event System.Action<Status, MLResult> OnStatusUpdate;
         #endregion
 

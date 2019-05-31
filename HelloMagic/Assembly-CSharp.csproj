@@ -155,6 +155,93 @@
     <Compile Include="Assets\MagicLeap\Scripts\MLVersion.cs" />
     <Compile Include="Assets\MyControl.cs" />
     <Compile Include="Assets\PlaneRecognition.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\Examples\ComputerVision\Scripts\ComputerVisionController.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\Examples\ComputerVision\Scripts\EdgeDetector.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\Examples\ComputerVision\Scripts\TextureReader.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\Examples\ComputerVision\Scripts\TextureReaderApi.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\InstantPreview\Scripts\InstantPreviewInput.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\InstantPreview\Scripts\InstantPreviewManager.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\InstantPreview\Scripts\InstantPreviewTrackedPoseDriver.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Anchor.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\AndroidPermissionsManager.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\AndroidPermissionsRequestResult.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\AnchorApi.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\ApiApkInstallationStatus.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\ApiApkInstallStatusExtensions.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\ApiArStatus.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\ApiAvailability.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\ApiAvailabilityExtensions.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\ApiCameraMetadata.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\ApiConstants.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\ApiDisplayUvCoords.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\ApiDisplayUvCoordsExtensions.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\ApiLightEstimateState.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\ApiLightEstimateStateExtensions.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\ApiLightEstimationMode.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\ApiPlaneFindingMode.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\ApiPoseData.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\ApiPrestoConfig.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\ApiPrestoStatus.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\ApiPrestoStatusExtensions.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\ApiTrackableType.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\ApiTrackableTypeExtensions.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\ApiTrackedPointOrientationMode.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\ApiTrackedPointOrientationModeExtensions.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\ApiTrackingState.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\ApiTrackingStateExtensions.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\ApiUpdateMode.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\CameraApi.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\CameraMetadataApi.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\FrameApi.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\HitTestApi.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\ImageApi.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\LightEstimateApi.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\NativeSession.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\PlaneApi.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\PointApi.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\PointCloudApi.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\PoseApi.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\SessionApi.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\SessionConfigApi.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\TrackableApi.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Api\TrackableListApi.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\ApkAvailabilityStatus.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\ApkInstallationStatus.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\ARCoreBackgroundRenderer.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\ARCoreSession.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\ARCoreSessionConfig.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Async\WaitForTaskCompletionYieldInstruction.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\AsyncTask.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\CameraImageBytes.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\CameraMetadataTag.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\CameraMetadataValue.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\DisplayUvCoords.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\EnvironmentalLight.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Frame.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\LightEstimate.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\LightEstimateState.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Managers\LifecycleManager.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Managers\TrackableManager.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\PointCloudPoint.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Session.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\SessionStatus.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\SessionStatusExtensions.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Trackable.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\TrackableHit.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\TrackableHitFlags.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\TrackableQueryFilter.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\TrackedPlane.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\TrackedPoint.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\TrackedPointOrientationMode.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\TrackingState.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Utility\ARCoreProjectSettings.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Utility\ARDebug.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Utility\ConversionHelper.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Utility\IntPtrEqualityComparer.cs" />
+    <Compile Include="Assets\Portal\GoogleARCore\SDK\Scripts\Utility\MarshalingHelper.cs" />
+    <Compile Include="Assets\Portal\HelloAR\Scripts\HelloARController.cs" />
+    <Compile Include="Assets\Portal\HelloAR\Scripts\PointcloudVisualizer.cs" />
+    <Compile Include="Assets\Portal\HelloAR\Scripts\TrackedPlaneVisualizer.cs" />
     <Compile Include="Assets\Scripts\HeadLockControl.cs" />
     <Compile Include="Assets\Scripts\ObjectRaycast.cs" />
     <Compile Include="Assets\VolumetricLines\ExampleScenes\ExampleScripts\CannonBehavior.cs" />
@@ -165,13 +252,18 @@
     <Compile Include="Assets\VolumetricLines\Scripts\VolumetricLineStripBehavior.cs" />
     <Compile Include="Assets\VolumetricLines\Scripts\VolumetricLineVertexData.cs" />
     <Compile Include="Assets\VolumetricLines\Scripts\VolumetricMultiLineBehavior.cs" />
+    <None Include="Assets\Portal\HelloAR\Materials\Shaders\PlaneGrid.shader" />
     <None Include="Assets\VolumetricLines\Shaders\_StripShader.cginc" />
     <None Include="Assets\MagicLeap\BackgroundMusicExample\readme.txt" />
     <None Include="Assets\MagicLeap\Examples\Shaders\PointCloud.shader" />
     <None Include="Assets\MagicLeap\Examples\Documentation\MusicService.txt" />
+    <None Include="Assets\Portal\CourseMaterials\Shaders\MainShader.shader" />
     <None Include="Assets\MagicLeap\Examples\Documentation\WorldScale.txt" />
     <None Include="Assets\MagicLeap\Examples\Documentation\Contacts.txt" />
+    <None Include="Assets\Portal\HelloAR\Materials\Shaders\MobileDiffuseWithLightEstimation.shader" />
+    <None Include="Assets\Portal\CourseMaterials\Shaders\MaskShader.shader" />
     <None Include="Assets\MagicLeap\Examples\Shaders\WorldVerticalWithFilter.shader" />
+    <None Include="Assets\Portal\GoogleARCore\SDK\Materials\ARBackground.shader" />
     <None Include="Assets\MagicLeap\Examples\Documentation\MobileApp.txt" />
     <None Include="Assets\MagicLeap\Libs\LuminMediaPlayer.xml" />
     <None Include="Assets\MagicLeap\Examples\Documentation\Planes.txt" />
@@ -188,9 +280,11 @@
     <None Include="Assets\MagicLeap\Examples\Documentation\Vignette.txt" />
     <None Include="Assets\MagicLeap\Examples\Documentation\Controller.txt" />
     <None Include="Assets\MagicLeap\Examples\Documentation\HandTracking.txt" />
+    <None Include="Assets\Portal\HelloAR\Materials\Shaders\PointCloud.shader" />
     <None Include="Assets\VolumetricLines\Shaders\Strip-Additive.shader" />
     <None Include="Assets\MagicLeap\Examples\Documentation\VideoCapture.txt" />
     <None Include="Assets\MagicLeap\Examples\Documentation\Persistence.txt" />
+    <None Include="Assets\Portal\GoogleARCore\Examples\ComputerVision\Materials\EdgeDetectionBackground.shader" />
     <None Include="Assets\MagicLeap\Examples\Shaders\WorldXZWithColor.shader" />
     <None Include="Assets\MagicLeap\Examples\Shaders\MeshWorldSpace.shader" />
     <None Include="Assets\MagicLeap\BackgroundMusicExample\music_manifest.xml" />
@@ -200,6 +294,7 @@
     <None Include="Assets\MagicLeap\Examples\Documentation\InputModule.txt" />
     <None Include="Assets\VolumetricLines\Shaders\Fast-Additive.shader" />
     <None Include="Assets\MagicLeap\Examples\Documentation\ImageCapture.txt" />
+    <None Include="Assets\Portal\HelloAR\Materials\Shaders\MobileSpecularWithLightEstimation.shader" />
     <None Include="Assets\MagicLeap\Examples\Documentation\Raycast.txt" />
     <None Include="Assets\MagicLeap\Examples\Shaders\PlaneEdge.shader" />
     <None Include="Assets\MagicLeap\Examples\Documentation\MediaPlayer.txt" />
@@ -210,43 +305,43 @@
     <None Include="Assets\MagicLeap\Examples\Models\Controller\Shaders\ControllerDepthMask.shader" />
     <None Include="Assets\MagicLeap\Examples\Documentation\ImageTracking.txt" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>/Users/samhoud/Desktop/HelloMagic/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>/Users/samhoud/Desktop/HelloMagic/HelloMagic/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.MagicLeap">
-      <HintPath>/Users/samhoud/Desktop/HelloMagic/Library/ScriptAssemblies/UnityEditor.XR.MagicLeap.dll</HintPath>
+      <HintPath>/Users/samhoud/Desktop/HelloMagic/HelloMagic/Library/ScriptAssemblies/UnityEditor.XR.MagicLeap.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/samhoud/Desktop/HelloMagic/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/samhoud/Desktop/HelloMagic/HelloMagic/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Users/samhoud/Desktop/HelloMagic/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/samhoud/Desktop/HelloMagic/HelloMagic/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>/Users/samhoud/Desktop/HelloMagic/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>/Users/samhoud/Desktop/HelloMagic/HelloMagic/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Users/samhoud/Desktop/HelloMagic/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/samhoud/Desktop/HelloMagic/HelloMagic/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-      <HintPath>/Users/samhoud/Desktop/HelloMagic/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>/Users/samhoud/Desktop/HelloMagic/HelloMagic/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>/Users/samhoud/Desktop/HelloMagic/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+      <HintPath>/Users/samhoud/Desktop/HelloMagic/HelloMagic/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>/Users/samhoud/Desktop/HelloMagic/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+      <HintPath>/Users/samhoud/Desktop/HelloMagic/HelloMagic/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/samhoud/Desktop/HelloMagic/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/samhoud/Desktop/HelloMagic/HelloMagic/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>/Users/samhoud/Desktop/HelloMagic/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>/Users/samhoud/Desktop/HelloMagic/HelloMagic/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>/Users/samhoud/Desktop/HelloMagic/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>/Users/samhoud/Desktop/HelloMagic/HelloMagic/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.MagicLeap">
-      <HintPath>/Users/samhoud/Desktop/HelloMagic/Library/ScriptAssemblies/UnityEngine.XR.MagicLeap.dll</HintPath>
+      <HintPath>/Users/samhoud/Desktop/HelloMagic/HelloMagic/Library/ScriptAssemblies/UnityEngine.XR.MagicLeap.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Hub/Editor/2019.1.2f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -432,22 +527,22 @@
       <HintPath>/Applications/Unity/Hub/Editor/2019.1.2f1/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
     </Reference>
     <Reference Include="MSA.Runtime">
-      <HintPath>/Users/samhoud/Desktop/HelloMagic/Assets/MagicLeap/Soundfield/MSA.Runtime.dll</HintPath>
+      <HintPath>/Users/samhoud/Desktop/HelloMagic/HelloMagic/Assets/MagicLeap/Soundfield/MSA.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="LuminMediaPlayer">
-      <HintPath>/Users/samhoud/Desktop/HelloMagic/Assets/MagicLeap/Libs/LuminMediaPlayer.dll</HintPath>
+      <HintPath>/Users/samhoud/Desktop/HelloMagic/HelloMagic/Assets/MagicLeap/Libs/LuminMediaPlayer.dll</HintPath>
     </Reference>
     <Reference Include="LuminUnity">
-      <HintPath>/Users/samhoud/Desktop/HelloMagic/Assets/MagicLeap/Libs/LuminUnity.dll</HintPath>
+      <HintPath>/Users/samhoud/Desktop/HelloMagic/HelloMagic/Assets/MagicLeap/Libs/LuminUnity.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>/Users/samhoud/Desktop/HelloMagic/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>/Users/samhoud/Desktop/HelloMagic/HelloMagic/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>/Users/samhoud/Desktop/HelloMagic/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>/Users/samhoud/Desktop/HelloMagic/HelloMagic/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>/Users/samhoud/Desktop/HelloMagic/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>/Users/samhoud/Desktop/HelloMagic/HelloMagic/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>/Applications/Unity/Hub/Editor/2019.1.2f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

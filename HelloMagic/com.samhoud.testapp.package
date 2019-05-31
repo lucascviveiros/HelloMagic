@@ -2,7 +2,7 @@
 
 
 USES = \
-	/Users/samhoud/Desktop/HelloMagic/Temp/StagingArea/assets \
+	/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/assets \
 
 
 ######### DO NOT EDIT ABOVE #########

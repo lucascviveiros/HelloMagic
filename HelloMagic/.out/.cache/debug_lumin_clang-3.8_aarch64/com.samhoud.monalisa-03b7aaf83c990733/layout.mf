@@ -21,6 +21,7 @@
  },
  {
   "dest": "bin/libml_mediaplayer_plugin.so",
+  "src": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/Plugins/libml_mediaplayer_plugin.so"
  },
  {
   "dest": "bin/nunit.framework.dll",

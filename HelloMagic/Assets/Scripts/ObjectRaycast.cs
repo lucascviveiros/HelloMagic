@@ -35,21 +35,7 @@ public class ObjectRaycast : MonoBehaviour
         {
             if (button == MLInputControllerButton.Bumper)
             {
-
-                //GameObject myInstObj = Instantiate(_thePortal, hit.point, Quaternion.Euler(0f, -90f, 0f));
-                //GameObject myInstObj = Instantiate(_thePortal, hit.point, Quaternion.Euler(hit.normal));
-                //myInstObj.transform.LookAt(_camera.transform);
-
-
-
-               // Vector3 targetDir = _camera.transform.position - transform.position;
-                //Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, 1, 0.0f);
-
-
                 GameObject myInstObj = Instantiate(_thePortal, hit.point, Quaternion.Euler(0, _camera.transform.eulerAngles.y + 180, 0));
-
-                //_camera.transform.rotation rotaciona conforme a camera
-
             }
         }
     }

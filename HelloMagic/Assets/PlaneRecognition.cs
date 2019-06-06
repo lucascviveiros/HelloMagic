@@ -6,8 +6,8 @@ using UnityEngine.XR.MagicLeap;
 public class PlaneRecognition : MonoBehaviour
 {
 
-    public Transform BBoxTransform;  // used to determine the center of the region in which the plane extraction happens. Use the head pose through the MainCamera
-    public Vector3 BBoxExtents;  //determines the size of the region. If the bounding box extent is 0,0,0, the size of the region from which you can extract planes is boundless.
+    public Transform BBoxTransform;  // used to determine the Center of the region in which the plane extraction happens. Use the head pose through the MainCamera
+    public Vector3 BBoxExtents;  //determines the Size of the region. If the bounding box extent is 0,0,0, the size of the region from which you can extract planes is boundless.
     public GameObject PlaneGameObject;
 
     public MLWorldPlanesQueryFlags QueryFlags;
@@ -18,7 +18,6 @@ public class PlaneRecognition : MonoBehaviour
     private MLWorldPlanesQueryParams _queryParams = new MLWorldPlanesQueryParams();
     private List<GameObject> _planeCache = new List<GameObject>();  //List of planes saved
 
-    // Use this for initialization
     void Start()
     {
         MLWorldPlanes.Start(); //start the planes recognition
@@ -29,7 +28,6 @@ public class PlaneRecognition : MonoBehaviour
         MLWorldPlanes.Stop();    
     }
 
-    // Update is called once per frame
     void Update()
     {
         timeSinceLastRequest += Time.deltaTime;

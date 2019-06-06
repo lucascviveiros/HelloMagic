@@ -29,7 +29,7 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.MagicLeap.MLSpatialMapper
     - UnityEngine.XR.MagicLeap.Rendering.MagicLeapCamera
   sceneClasses:
-    Assets/Scenes/The Portal 2.unity:
+    Assets/Scenes/The PortaL.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -65,51 +65,51 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9384}
+      Script: {instanceID: 9426}
     - Class: 114
-      Script: {instanceID: 9560}
+      Script: {instanceID: 9628}
     - Class: 114
-      Script: {instanceID: 9566}
+      Script: {instanceID: 9634}
     - Class: 114
-      Script: {instanceID: 9572}
+      Script: {instanceID: 9640}
     - Class: 114
-      Script: {instanceID: 9616}
+      Script: {instanceID: 9684}
     - Class: 114
-      Script: {instanceID: 9618}
+      Script: {instanceID: 9686}
     - Class: 114
-      Script: {instanceID: 9692}
+      Script: {instanceID: 9766}
     - Class: 114
-      Script: {instanceID: 9704}
+      Script: {instanceID: 9778}
     - Class: 114
-      Script: {instanceID: 9846}
+      Script: {instanceID: 9930}
     - Class: 114
-      Script: {instanceID: 9984}
+      Script: {instanceID: 10078}
     - Class: 114
-      Script: {instanceID: 10056}
+      Script: {instanceID: 10156}
     - Class: 114
-      Script: {instanceID: 10384}
+      Script: {instanceID: 10506}
     - Class: 114
-      Script: {instanceID: 10542}
+      Script: {instanceID: 10684}
     - Class: 114
-      Script: {instanceID: 10596}
+      Script: {instanceID: 10746}
     - Class: 114
-      Script: {instanceID: 10616}
+      Script: {instanceID: 10768}
     - Class: 114
-      Script: {instanceID: 10848}
+      Script: {instanceID: 11028}
     - Class: 114
-      Script: {instanceID: 10858}
+      Script: {instanceID: 11038}
     - Class: 114
-      Script: {instanceID: 10866}
+      Script: {instanceID: 11048}
     - Class: 114
-      Script: {instanceID: 10882}
+      Script: {instanceID: 11068}
     - Class: 114
-      Script: {instanceID: 10916}
+      Script: {instanceID: 11106}
     - Class: 114
-      Script: {instanceID: 11172}
+      Script: {instanceID: 11384}
     - Class: 114
-      Script: {instanceID: 11256}
+      Script: {instanceID: 11482}
     - Class: 114
-      Script: {instanceID: 11434}
+      Script: {instanceID: 11674}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -169,6 +169,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: GoogleARCore
+    className: Anchor
   - hash:
       serializedVersion: 2
       Hash: 3d19d32937527bc486ef051b3b87085b
@@ -465,6 +471,12 @@ ScriptsOnlyBuild:
     className: VideoCaptureVisualizer
   - hash:
       serializedVersion: 2
+      Hash: 3d4457a0367071c8e819f0f91733b4b8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: GoogleARCore.TextureReader
+    className: ComputerVisionController
+  - hash:
+      serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -699,6 +711,12 @@ ScriptsOnlyBuild:
     className: ContentDragController
   - hash:
       serializedVersion: 2
+      Hash: 1e9c409e29cdc019c5521daf5eb17010
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: GoogleARCore.TextureReader
+    className: TextureReader
+  - hash:
+      serializedVersion: 2
       Hash: b583ffccad2246520b6558ef8c600b3e
     assemblyName: Assembly-CSharp.dll
     namespaceName: MagicLeap
@@ -783,6 +801,12 @@ ScriptsOnlyBuild:
     className: TrackedPoseDriver
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: GoogleARCore
+    className: EnvironmentalLight
+  - hash:
+      serializedVersion: 2
       Hash: 31bd92eaf0472a56b67918136d592dba
     assemblyName: Assembly-CSharp.dll
     namespaceName: MagicLeap
@@ -847,6 +871,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WorldScale
+  - hash:
+      serializedVersion: 2
+      Hash: 11350d9ac428a7b231def57b3d26aac3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: GoogleARCore.HelloAR
+    className: HelloARController
   - hash:
       serializedVersion: 2
       Hash: 7319d5dac7468d8d923be2189f32d1b6
@@ -1305,6 +1335,12 @@ ScriptsOnlyBuild:
     className: CreateSinShapedLineStrip
   - hash:
       serializedVersion: 2
+      Hash: b818207c0b8a805931f7a7989870283e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: GoogleARCore
+    className: ARCoreBackgroundRenderer
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1377,6 +1413,12 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: GoogleARCore.HelloAR
+    className: PointcloudVisualizer
+  - hash:
+      serializedVersion: 2
       Hash: d49d0054e89ec414c1be8807b5cb4572
     assemblyName: Assembly-CSharp.dll
     namespaceName: MagicLeap
@@ -1407,7 +1449,7 @@ ScriptsOnlyBuild:
     className: ImageTrackingVisualizer
   - hash:
       serializedVersion: 2
-      Hash: a5885a3f00e33af62a15d760172e68a8
+      Hash: 26dd93e0c5a3e5bab513c938a09201ef
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ObjectRaycast
@@ -1473,6 +1515,12 @@ ScriptsOnlyBuild:
     className: ComboRaycastHead
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: GoogleARCore
+    className: InstantPreviewTrackedPoseDriver
+  - hash:
+      serializedVersion: 2
       Hash: 92995c680a3d85887162562cf5c0feea
     assemblyName: Assembly-CSharp.dll
     namespaceName: MagicLeap
@@ -1507,6 +1555,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: dcdbe5f60453abb48bd1e2d8226c4519
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: GoogleARCore
+    className: ARCoreSession
   - hash:
       serializedVersion: 2
       Hash: 991e49dd5c39769aa852f5ad896bcb95
@@ -1579,6 +1633,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: MagicLeap
     className: ImageCaptureExample
+  - hash:
+      serializedVersion: 2
+      Hash: a1b7cfcc4f40a79a3ab4402c876ba619
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: GoogleARCore
+    className: ARCoreSessionConfig
   - hash:
       serializedVersion: 2
       Hash: 37f9065fac79dd2c97d8495e1f4c29a6
@@ -1705,6 +1765,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: MagicLeap
     className: ContactsButton
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: GoogleARCore.HelloAR
+    className: TrackedPlaneVisualizer
   - hash:
       serializedVersion: 2
       Hash: 0fa2ece256be4a558b3ea0e8e7b085d2
@@ -2269,73 +2335,7 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: MagicLeap
     className: DeepSeaExplorerLauncher
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: GoogleARCore
-    className: Anchor
-  - hash:
-      serializedVersion: 2
-      Hash: 3d4457a0367071c8e819f0f91733b4b8
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: GoogleARCore.TextureReader
-    className: ComputerVisionController
-  - hash:
-      serializedVersion: 2
-      Hash: 1e9c409e29cdc019c5521daf5eb17010
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: GoogleARCore.TextureReader
-    className: TextureReader
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: GoogleARCore
-    className: EnvironmentalLight
-  - hash:
-      serializedVersion: 2
-      Hash: 11350d9ac428a7b231def57b3d26aac3
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: GoogleARCore.HelloAR
-    className: HelloARController
-  - hash:
-      serializedVersion: 2
-      Hash: b818207c0b8a805931f7a7989870283e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: GoogleARCore
-    className: ARCoreBackgroundRenderer
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: GoogleARCore.HelloAR
-    className: PointcloudVisualizer
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: GoogleARCore
-    className: InstantPreviewTrackedPoseDriver
-  - hash:
-      serializedVersion: 2
-      Hash: dcdbe5f60453abb48bd1e2d8226c4519
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: GoogleARCore
-    className: ARCoreSession
-  - hash:
-      serializedVersion: 2
-      Hash: a1b7cfcc4f40a79a3ab4402c876ba619
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: GoogleARCore
-    className: ARCoreSessionConfig
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: GoogleARCore.HelloAR
-    className: TrackedPlaneVisualizer
   platform: 39
   scenePathNames:
-  - Assets/Scenes/The Portal 2.unity
-  playerPath: /Users/samhoud/Desktop/theportal.mpk
+  - Assets/Scenes/The PortaL.unity
+  playerPath: /Users/samhoud/Desktop/theportaL.mpk

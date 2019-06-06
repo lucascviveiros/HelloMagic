@@ -8,12 +8,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Monalisa.unity
     guid: ec35a3e77e51d4241a0fdba679257601
-  - enabled: 0
-    path: Assets/Scenes/AmbientRecognition.unity
-    guid: 0f93d2e2e0a344e9f840ad7ffea6a057
-  - enabled: 0
-    path: Assets/Scenes/The Portal.unity
-    guid: cbeb3ce040d034b9e93305e31b306997
   - enabled: 1
     path: Assets/Scenes/The PortaL.unity
     guid: 74f814fa4188f406c83a8465dbc091d3

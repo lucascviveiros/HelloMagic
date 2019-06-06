@@ -47698,8 +47698,8 @@ struct  MyControl_t017B36F215C47EF38D3F6EF18CE49E8F7CE56AF4  : public MonoBehavi
 public:
 	// UnityEngine.XR.MagicLeap.MLPersistentBehavior MyControl::persistentBehavior
 	MLPersistentBehavior_t187C068D4D6291CA77E1D02BF7538CB47AD05E10 * ___persistentBehavior_4;
-	// UnityEngine.GameObject MyControl::_myObj
-	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ____myObj_5;
+	// UnityEngine.GameObject MyControl::_monalisa
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ____monalisa_5;
 	// UnityEngine.GameObject MyControl::_camera
 	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ____camera_6;
 	// UnityEngine.XR.MagicLeap.MLInputController MyControl::_controller
@@ -47715,13 +47715,13 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___persistentBehavior_4), (void*)value);
 	}
 
-	inline static int32_t get_offset_of__myObj_5() { return static_cast<int32_t>(offsetof(MyControl_t017B36F215C47EF38D3F6EF18CE49E8F7CE56AF4, ____myObj_5)); }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get__myObj_5() const { return ____myObj_5; }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of__myObj_5() { return &____myObj_5; }
-	inline void set__myObj_5(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	inline static int32_t get_offset_of__monalisa_5() { return static_cast<int32_t>(offsetof(MyControl_t017B36F215C47EF38D3F6EF18CE49E8F7CE56AF4, ____monalisa_5)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get__monalisa_5() const { return ____monalisa_5; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of__monalisa_5() { return &____monalisa_5; }
+	inline void set__monalisa_5(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
 	{
-		____myObj_5 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&____myObj_5), (void*)value);
+		____monalisa_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____monalisa_5), (void*)value);
 	}
 
 	inline static int32_t get_offset_of__camera_6() { return static_cast<int32_t>(offsetof(MyControl_t017B36F215C47EF38D3F6EF18CE49E8F7CE56AF4, ____camera_6)); }
@@ -47748,39 +47748,39 @@ public:
 struct  ObjectRaycast_tFE54C692D9B931F99700F93B5E76ADCDCC9139C0  : public MonoBehaviour_t4A60845CF505405AF8BE8C61CC07F75CADEF6429
 {
 public:
-	// UnityEngine.GameObject ObjectRaycast::myObj
-	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___myObj_4;
-	// UnityEngine.GameObject ObjectRaycast::myCamera
-	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___myCamera_5;
-	// UnityEngine.XR.MagicLeap.MLInputController ObjectRaycast::myController
-	MLInputController_t75B514046127940805CD96EDBCB444204F50AFAB * ___myController_6;
+	// UnityEngine.GameObject ObjectRaycast::_thePortal
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ____thePortal_4;
+	// UnityEngine.GameObject ObjectRaycast::_camera
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ____camera_5;
+	// UnityEngine.XR.MagicLeap.MLInputController ObjectRaycast::_controller
+	MLInputController_t75B514046127940805CD96EDBCB444204F50AFAB * ____controller_6;
 
 public:
-	inline static int32_t get_offset_of_myObj_4() { return static_cast<int32_t>(offsetof(ObjectRaycast_tFE54C692D9B931F99700F93B5E76ADCDCC9139C0, ___myObj_4)); }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_myObj_4() const { return ___myObj_4; }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_myObj_4() { return &___myObj_4; }
-	inline void set_myObj_4(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	inline static int32_t get_offset_of__thePortal_4() { return static_cast<int32_t>(offsetof(ObjectRaycast_tFE54C692D9B931F99700F93B5E76ADCDCC9139C0, ____thePortal_4)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get__thePortal_4() const { return ____thePortal_4; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of__thePortal_4() { return &____thePortal_4; }
+	inline void set__thePortal_4(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
 	{
-		___myObj_4 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___myObj_4), (void*)value);
+		____thePortal_4 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____thePortal_4), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_myCamera_5() { return static_cast<int32_t>(offsetof(ObjectRaycast_tFE54C692D9B931F99700F93B5E76ADCDCC9139C0, ___myCamera_5)); }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_myCamera_5() const { return ___myCamera_5; }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_myCamera_5() { return &___myCamera_5; }
-	inline void set_myCamera_5(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	inline static int32_t get_offset_of__camera_5() { return static_cast<int32_t>(offsetof(ObjectRaycast_tFE54C692D9B931F99700F93B5E76ADCDCC9139C0, ____camera_5)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get__camera_5() const { return ____camera_5; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of__camera_5() { return &____camera_5; }
+	inline void set__camera_5(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
 	{
-		___myCamera_5 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___myCamera_5), (void*)value);
+		____camera_5 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____camera_5), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_myController_6() { return static_cast<int32_t>(offsetof(ObjectRaycast_tFE54C692D9B931F99700F93B5E76ADCDCC9139C0, ___myController_6)); }
-	inline MLInputController_t75B514046127940805CD96EDBCB444204F50AFAB * get_myController_6() const { return ___myController_6; }
-	inline MLInputController_t75B514046127940805CD96EDBCB444204F50AFAB ** get_address_of_myController_6() { return &___myController_6; }
-	inline void set_myController_6(MLInputController_t75B514046127940805CD96EDBCB444204F50AFAB * value)
+	inline static int32_t get_offset_of__controller_6() { return static_cast<int32_t>(offsetof(ObjectRaycast_tFE54C692D9B931F99700F93B5E76ADCDCC9139C0, ____controller_6)); }
+	inline MLInputController_t75B514046127940805CD96EDBCB444204F50AFAB * get__controller_6() const { return ____controller_6; }
+	inline MLInputController_t75B514046127940805CD96EDBCB444204F50AFAB ** get_address_of__controller_6() { return &____controller_6; }
+	inline void set__controller_6(MLInputController_t75B514046127940805CD96EDBCB444204F50AFAB * value)
 	{
-		___myController_6 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___myController_6), (void*)value);
+		____controller_6 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____controller_6), (void*)value);
 	}
 };
 
@@ -63736,7 +63736,7 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize3180 = { sizeof (MyControl_t
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3180[5] = 
 {
 	MyControl_t017B36F215C47EF38D3F6EF18CE49E8F7CE56AF4::get_offset_of_persistentBehavior_4(),
-	MyControl_t017B36F215C47EF38D3F6EF18CE49E8F7CE56AF4::get_offset_of__myObj_5(),
+	MyControl_t017B36F215C47EF38D3F6EF18CE49E8F7CE56AF4::get_offset_of__monalisa_5(),
 	MyControl_t017B36F215C47EF38D3F6EF18CE49E8F7CE56AF4::get_offset_of__camera_6(),
 	MyControl_t017B36F215C47EF38D3F6EF18CE49E8F7CE56AF4::get_offset_of__controller_7(),
 	0,
@@ -63765,9 +63765,9 @@ extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3183;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3183 = { sizeof (ObjectRaycast_tFE54C692D9B931F99700F93B5E76ADCDCC9139C0), -1, 0, 0 };
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3183[4] = 
 {
-	ObjectRaycast_tFE54C692D9B931F99700F93B5E76ADCDCC9139C0::get_offset_of_myObj_4(),
-	ObjectRaycast_tFE54C692D9B931F99700F93B5E76ADCDCC9139C0::get_offset_of_myCamera_5(),
-	ObjectRaycast_tFE54C692D9B931F99700F93B5E76ADCDCC9139C0::get_offset_of_myController_6(),
+	ObjectRaycast_tFE54C692D9B931F99700F93B5E76ADCDCC9139C0::get_offset_of__thePortal_4(),
+	ObjectRaycast_tFE54C692D9B931F99700F93B5E76ADCDCC9139C0::get_offset_of__camera_5(),
+	ObjectRaycast_tFE54C692D9B931F99700F93B5E76ADCDCC9139C0::get_offset_of__controller_6(),
 	0,
 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3184;

@@ -1,23 +1,9 @@
-// %BANNER_BEGIN%
-// ---------------------------------------------------------------------
-// %COPYRIGHT_BEGIN%
-//
-// Copyright (c) 2019 Magic Leap, Inc. All Rights Reserved.
-// Use of this file is governed by the Creator Agreement, located
-// here: https://id.magicleap.com/creator-terms
-//
-// %COPYRIGHT_END%
-// ---------------------------------------------------------------------
-// %BANNER_END%
-
 using UnityEngine;
 using UnityEngine.XR.MagicLeap;
 
 namespace MagicLeap
 {
-    /// <summary>
     /// Utility Component to allow users to drag persistent content around.
-    /// </summary>
     [RequireComponent(typeof(Collider), typeof(MLPersistentBehavior))]
     public class ContentDragHandler : MonoBehaviour
     {
@@ -31,18 +17,14 @@ namespace MagicLeap
         #endregion
 
         #region Unity Methods
-        /// <summary>
+
         /// Set Up
-        /// </summary>
         private void Start()
         {
             _pointBehavior = GetComponent<MLPersistentBehavior>();
         }
 
-        /// <summary>
         /// Register for events when a ContentDragController enters the trigger area
-        /// </summary>
-        /// <param name="other">Collider of ContentDragController</param>
         private void OnTriggerEnter(Collider other)
         {
             ContentDragController controllerDrag = other.GetComponent<ContentDragController>();
@@ -57,10 +39,7 @@ namespace MagicLeap
             _controllerDrag.OnEndDrag += HandleEndDrag;
         }
 
-        /// <summary>
         /// Unregister for events when a ContentDragController leaves the trigger area
-        /// </summary>
-        /// <param name="other">Collider of ContentDragController</param>
         private void OnTriggerExit(Collider other)
         {
             ContentDragController controllerDrag = other.GetComponent<ContentDragController>();
@@ -78,9 +57,7 @@ namespace MagicLeap
             }
         }
 
-        /// <summary>
         /// Unregister for events in case this component gets destroyed while being dragged
-        /// </summary>
         private void OnDestroy()
         {
             if (_controllerDrag != null)
@@ -94,9 +71,8 @@ namespace MagicLeap
         #endregion
 
         #region Event Handlers
-        /// <summary>
+
         /// Set up offsets when dragging begins
-        /// </summary>
         private void HandleBeginDrag()
         {
             Vector3 relativeDirection = transform.position - _controllerDrag.transform.position;
@@ -106,9 +82,7 @@ namespace MagicLeap
             _dragStarted = true;
         }
 
-        /// <summary>
         /// Update transform while dragging
-        /// </summary>
         private void HandleDrag()
         {
             if (_dragStarted)
@@ -118,9 +92,7 @@ namespace MagicLeap
             }
         }
 
-        /// <summary>
         /// Save binding when dragging ends
-        /// </summary>
         private void HandleEndDrag()
         {
             _dragStarted = false;

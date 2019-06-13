@@ -242,8 +242,13 @@
     <Compile Include="Assets\Portal\HelloAR\Scripts\HelloARController.cs" />
     <Compile Include="Assets\Portal\HelloAR\Scripts\PointcloudVisualizer.cs" />
     <Compile Include="Assets\Portal\HelloAR\Scripts\TrackedPlaneVisualizer.cs" />
+    <Compile Include="Assets\Prefabs\Sci-fi prefabs\Prefabs\Earth\SpinFree.cs" />
     <Compile Include="Assets\Scripts\HeadLockControl.cs" />
     <Compile Include="Assets\Scripts\ObjectRaycast.cs" />
+    <Compile Include="Assets\Scripts\Ship.cs" />
+    <Compile Include="Assets\Scripts\ShipInput.cs" />
+    <Compile Include="Assets\Scripts\ShipPhysics.cs" />
+    <Compile Include="Assets\Scripts\TouchpadGestures.cs" />
     <Compile Include="Assets\VolumetricLines\ExampleScenes\ExampleScripts\CannonBehavior.cs" />
     <Compile Include="Assets\VolumetricLines\ExampleScenes\ExampleScripts\CreateSinShapedLineStrip.cs" />
     <Compile Include="Assets\VolumetricLines\ExampleScenes\ExampleScripts\ShotBehavior.cs" />
@@ -254,6 +259,7 @@
     <Compile Include="Assets\VolumetricLines\Scripts\VolumetricMultiLineBehavior.cs" />
     <None Include="Assets\Portal\HelloAR\Materials\Shaders\PlaneGrid.shader" />
     <None Include="Assets\VolumetricLines\Shaders\_StripShader.cginc" />
+    <None Include="Assets\Prefabs\Sci-fi prefabs\Prefabs\Sci-Fi Styled Modular Pack\Readme.txt" />
     <None Include="Assets\MagicLeap\BackgroundMusicExample\readme.txt" />
     <None Include="Assets\MagicLeap\Examples\Shaders\PointCloud.shader" />
     <None Include="Assets\MagicLeap\Examples\Documentation\MusicService.txt" />

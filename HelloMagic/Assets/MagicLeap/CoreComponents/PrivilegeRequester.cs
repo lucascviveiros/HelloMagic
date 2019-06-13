@@ -84,9 +84,9 @@ namespace UnityEngine.XR.MagicLeap
         readonly List<MLPrivilegeId> _privilegesGranted = new List<MLPrivilegeId>();
 
         #region Unity Methods
-        /// <summary>
+
+
         /// Start the Privileges API and set the Privilege State
-        /// </summary>
         void Start()
         {
             MLResult result = MLPrivileges.Start();
@@ -104,9 +104,7 @@ namespace UnityEngine.XR.MagicLeap
             }
         }
 
-        /// <summary>
-        /// Move through the privilege stages
-        /// </summary>
+        /// Move through the privilege stages        
         void Update()
         {
             /// Privileges have not yet been granted, go through the privilege states.
@@ -116,9 +114,7 @@ namespace UnityEngine.XR.MagicLeap
             }
         }
 
-        /// <summary>
         /// If the Privileges API is running, stop it.
-        /// </summary>
         void OnDestroy()
         {
             if (MLPrivileges.IsStarted)
@@ -127,15 +123,10 @@ namespace UnityEngine.XR.MagicLeap
             }
         }
 
-        /// <summary>
         /// Cannot make the assumption that a reality privilege is still granted after
         /// returning from pause. Return the application to the state where it
         /// requests privileges needed and clear out the list of already granted
         /// privileges. Also, disable the camera and unregister callbacks.
-        /// </summary>
-        /// <remarks>
-        /// Not necessary, but harmless, for sensitive privileges.
-        /// </remarks>
         void OnApplicationPause(bool pause)
         {
             if (pause && _state != PrivilegeState.Off)
@@ -147,9 +138,8 @@ namespace UnityEngine.XR.MagicLeap
         #endregion
 
         #region Private Methods
-        /// <summary>
+
         /// Handle the privilege states.
-        /// </summary>
         private void UpdatePrivilege()
         {
             switch (_state)
@@ -184,9 +174,7 @@ namespace UnityEngine.XR.MagicLeap
             }
         }
 
-        /// <summary>
         /// Request each needed privilege.
-        /// </summary>
         private void RequestPrivileges()
         {
             foreach (MLPrivilegeId priv in _privilegesToRequest)
@@ -205,12 +193,11 @@ namespace UnityEngine.XR.MagicLeap
         #endregion
 
         #region Event Handlers
-        /// <summary>
+
         /// Handles the result that is received from the query to the Privilege API.
         /// If one of the required privileges are denied, set the Privilege state to Denied.
         /// <param name="result">The resulting status of the query</param>
         /// <param name="privilegeId">The privilege being queried</param>
-        /// </summary>
         private void HandlePrivilegeAsyncRequest(MLResult result, MLPrivilegeId privilegeId)
         {
             if (result.Code == MLResultCode.PrivilegeGranted)

@@ -1,0 +1,18 @@
+newmtl blinn2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd body_dif.png
+bump  -bm 1 body_nm.tif
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks body_spec.tif
+newmtl blinn3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd teeth_co.tif
+Ni 1.00
+Ks 0.50 0.50 0.50

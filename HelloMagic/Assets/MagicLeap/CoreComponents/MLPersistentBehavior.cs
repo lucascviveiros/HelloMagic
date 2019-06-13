@@ -1,26 +1,12 @@
-// %BANNER_BEGIN%
-// ---------------------------------------------------------------------
-// %COPYRIGHT_BEGIN%
-//
-// Copyright (c) 2019 Magic Leap, Inc. All Rights Reserved.
-// Use of this file is governed by the Creator Agreement, located
-// here: https://id.magicleap.com/creator-terms
-//
-// %COPYRIGHT_END%
-// ---------------------------------------------------------------------
-// %BANNER_END%
-
 using System.Collections;
 
 namespace UnityEngine.XR.MagicLeap
 {
-    /// <summary>
     /// This is a component you can use to make a specific game object a persistent anchor/point
     /// in space. This component would try to restore itself on Start and will notify the listener
     /// if it's restored correctly or not. If this is the first time it would automatically look
     /// for the closest real world PCF to bind itself to. You can simply put your content you
     /// want to persist under the game object with this behavior attached to it.
-    /// </summary>
     public class MLPersistentBehavior : MonoBehaviour
     {
         #region Public Enumerations
@@ -81,10 +67,7 @@ namespace UnityEngine.XR.MagicLeap
         #endregion
 
         #region Unity Methods
-        /// <summary>
-        /// Start up
-        /// Note: This requires the privilege to be granted prior to Start()
-        /// </summary>
+
         void Start()
         {
             MLResult result = MLPersistentStore.Start();
@@ -126,9 +109,7 @@ namespace UnityEngine.XR.MagicLeap
             }
         }
 
-        /// <summary>
         /// Clean Up
-        /// </summary>
         void OnDestroy()
         {
             if (MLPersistentStore.IsStarted)
@@ -146,9 +127,8 @@ namespace UnityEngine.XR.MagicLeap
         #endregion // Unity Methods
 
         #region Private Methods
-        /// <summary>
+
         /// Determine and perform the appropriate action
-        /// </summary>
         void CreateOrRestoreBinding()
         {
             if (MLPersistentStore.Contains(UniqueId))
@@ -162,9 +142,7 @@ namespace UnityEngine.XR.MagicLeap
             }
         }
 
-        /// <summary>
         /// Tries to restore the binding
-        /// </summary>
         void RestoreBinding()
         {
             MLContentBinding binding;
@@ -184,9 +162,7 @@ namespace UnityEngine.XR.MagicLeap
 
         }
 
-        /// <summary>
         /// Finds the closest pcf for this persistent point.
-        /// </summary>
         IEnumerator BindToClosestPCF()
         {
             float timeoutInSeconds = TimeOutInSeconds;
@@ -205,9 +181,7 @@ namespace UnityEngine.XR.MagicLeap
             NotifyChangeOfStatus(Status.BINDING_CREATE_FAILED, new MLResult(MLResultCode.Timeout));
         }
 
-        /// <summary>
         /// Creates a binding to the closest PCF
-        /// </summary>
         /// <returns>Must be executed as a Coroutine</returns>
         IEnumerator TryBindingToClosestPCF()
         {
@@ -244,9 +218,7 @@ namespace UnityEngine.XR.MagicLeap
             }
         }
 
-        /// <summary>
         /// Triggers OnStatusUpdate event with the status
-        /// </summary>
         /// <param name="status">PersistentBehaviorStatus</param>
         void NotifyChangeOfStatus(Status status, MLResult result)
         {
@@ -256,9 +228,7 @@ namespace UnityEngine.XR.MagicLeap
             }
         }
 
-        /// <summary>
         /// Try to restore after a delay
-        /// </summary>
         /// <returns>IEnumerator for delay</returns>
         IEnumerator TryRestore()
         {
@@ -266,9 +236,7 @@ namespace UnityEngine.XR.MagicLeap
             MLContentBinder.Restore(Binding, HandleBindingRestore);
         }
 
-        /// <summary>
         /// Retry finding a reliable PCF after a delay
-        /// </summary>
         /// <returns>Coroutine</returns>
         IEnumerator RetryFindPCFToRebind()
         {
@@ -276,9 +244,7 @@ namespace UnityEngine.XR.MagicLeap
             HandlePCFLost();
         }
 
-        /// <summary>
         /// Register event handlers to the PCF this Persistent Behavior is bound to
-        /// </summary>
         void RegisterPCFEventHandlers()
         {
             if (Binding != null && Binding.PCF != null)
@@ -288,9 +254,7 @@ namespace UnityEngine.XR.MagicLeap
             }
         }
 
-        /// <summary>
         /// Unregister event handlers to the PCF this Persistent Behavior is bound to
-        /// </summary>
         void UnregisterPCFEventHandlers()
         {
             if (Binding != null && Binding.PCF != null)
@@ -300,10 +264,7 @@ namespace UnityEngine.XR.MagicLeap
             }
         }
 
-        /// <summary>
         /// Destroys the given binding
-        /// </summary>
-        /// <param name="binding">Binding</param>
         void DestroyBindingInternal(MLContentBinding binding)
         {
             if (binding != null)
@@ -314,11 +275,8 @@ namespace UnityEngine.XR.MagicLeap
         #endregion // Private Methods
 
         #region Event Handlers
-        /// <summary>
+
         /// Handler for binding restore
-        /// </summary>
-        /// <param name="contentBinding">Content binding.</param>
-        /// <param name="resultCode">Result code.</param>
         void HandleBindingRestore(MLContentBinding contentBinding, MLResult result)
         {
             if (!result.IsOk)
@@ -355,9 +313,7 @@ namespace UnityEngine.XR.MagicLeap
             }
         }
 
-        /// <summary>
         /// Handler when MLPersistentCoordinateFrames becomes ready
-        /// </summary>
         void HandleInitialized(MLResult status)
         {
             MLPersistentCoordinateFrames.OnInitialized -= HandleInitialized;
@@ -373,10 +329,8 @@ namespace UnityEngine.XR.MagicLeap
             }
         }
 
-        /// <summary>
         /// Handler when PCF bound to is lost. It tries to look for reliable PCF to bind to. If no PCF
         /// is available, try again later.
-        /// </summary>
         void HandlePCFLost()
         {
             _searchForPCF = null;
@@ -409,9 +363,7 @@ namespace UnityEngine.XR.MagicLeap
             }
         }
 
-        /// <summary>
         /// Handler when PCF bound to regains. Cancel any on-going search for another PCF.
-        /// </summary>
         void HandlePCFRegain()
         {
             Debug.Log("PCF Regained: " + Binding.PCF.CFUID);
@@ -424,20 +376,17 @@ namespace UnityEngine.XR.MagicLeap
         #endregion // Event Handlers
 
         #region Public Methods
-        /// <summary>
+
         /// Destroys the binding
         /// Note: Game Object is still alive. It is the responsibility
         /// of the caller to deal with the Game Object
-        /// </summary>
         public void DestroyBinding()
         {
             DestroyBindingInternal(Binding);
             NotifyChangeOfStatus(Status.BINDING_DESTROYED, MLResult.ResultOk);
         }
 
-        /// <summary>
         /// Called externally to save its binding
-        /// </summary>
         public void UpdateBinding()
         {
             if (transform.hasChanged)

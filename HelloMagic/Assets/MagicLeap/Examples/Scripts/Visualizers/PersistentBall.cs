@@ -28,16 +28,14 @@ namespace MagicLeap
         #endregion
 
         #region Public Events
-        /// <summary>
+
         /// Triggered when this content is to be destroyed
-        /// </summary>
         public event Action<GameObject> OnContentDestroy;
         #endregion
 
         #region Unity Methods
-        /// <summary>
-        /// Clean Up
-        /// </summary>
+
+                /// Clean Up
         private void OnDestroy()
         {
             if (_controllerConnectionHandler != null)
@@ -47,10 +45,7 @@ namespace MagicLeap
             }
         }
 
-        /// <summary>
         /// Register for controller input only when a controller enters the trigger area
-        /// </summary>
-        /// <param name="other">Collider of the Controller</param>
         private void OnTriggerEnter(Collider other)
         {
             ControllerConnectionHandler controllerConnectionHandler = other.GetComponent<ControllerConnectionHandler>();
@@ -63,10 +58,7 @@ namespace MagicLeap
             MLInput.OnControllerTouchpadGestureStart += HandleControllerTouchpadGestureStart;
         }
 
-        /// <summary>
         /// Unregister controller input when controller leaves the trigger area
-        /// </summary>
-        /// <param name="other">Collider of the Controller</param>
         private void OnTriggerExit(Collider other)
         {
             ControllerConnectionHandler controllerConnectionHandler = other.GetComponent<ControllerConnectionHandler>();
@@ -79,11 +71,8 @@ namespace MagicLeap
         #endregion
 
         #region Event Handlers
-        /// <summary>
+
         /// Handler for Gesture Start events
-        /// </summary>
-        /// <param name="controllerId">Controller Id</param>
-        /// <param name="gesture">Touchpad Gesture</param>
         private void HandleControllerTouchpadGestureStart(byte controllerId, MLInputControllerTouchpadGesture gesture)
         {
             if (_controllerConnectionHandler != null

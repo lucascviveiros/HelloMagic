@@ -2,16 +2,16 @@
  "entries": [
   {
    "compression": 8,
-   "hash": "96e910a1184a0b2a3f12c1699309869858482b38",
+   "hash": "5f305488c5b2bc4db0d49cca9995d7b0af4b4690",
    "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
-   "size": 3258432,
+   "size": 3256004,
    "src": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
   },
   {
    "compression": 8,
-   "hash": "ece06c055e17e0334e044782715b5b7c9ad06514",
+   "hash": "86f7aca7f50292ce68dc1ba3dc1368ad8eb0e970",
    "pkgpath": "bin/libil2cpp.so",
-   "size": 48764680,
+   "size": 48737296,
    "src": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/Native/libil2cpp.so",
    "xfrm_flags": {
     "signed": {
@@ -23,9 +23,9 @@
      "version": 3
     }
    },
-   "xfrm_hash": "f6aa0c000f5d0ddecb62c0cdcd8081cfa295d8a7",
+   "xfrm_hash": "7b8c951380730fafeba37a97dc80fc39aa69ced8",
    "xfrm_path": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/.out/.cache/debug_lumin_clang-3.8_aarch64/com.samhoud.theportal-03b7aaf83c990733/libil2cpp.so-a191a587d7338062",
-   "xfrm_size": 48765438
+   "xfrm_size": 48738054
   },
   {
    "compression": 8,
@@ -158,21 +158,21 @@
   },
   {
    "compression": 8,
-   "hash": "84ba79ff257cb9824f3ba41e38e7bcc0531df6ed",
+   "hash": "537d5c7dc075d067558ec72d6c25a7bcfe3f7dc2",
    "pkgpath": "Data/globalgamemanagers",
-   "size": 49552,
+   "size": 49600,
    "src": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/globalgamemanagers"
   },
   {
    "compression": 8,
-   "hash": "d7dda9356b69b86ac6b57657c65a8eaa5f2e1b80",
+   "hash": "4150be252bbe9a4efc104715356f70c9759b3a1d",
    "pkgpath": "Data/globalgamemanagers.assets",
-   "size": 78896,
+   "size": 79000,
    "src": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/globalgamemanagers.assets"
   },
   {
    "compression": 8,
-   "hash": "0cc3fb9dcbb1be84a3c876a8ce7a6889ed776961",
+   "hash": "9162b18159aaf127d1f1e9d50a2b1647c891399c",
    "pkgpath": "Data/level0",
    "size": 16716,
    "src": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/level0"
@@ -186,7 +186,7 @@
   },
   {
    "compression": 8,
-   "hash": "2b07e1de3c31feab4e1fe201cc778d4a79d8e96c",
+   "hash": "3d49e156828465ce5f095ec38bfa14726286e4b7",
    "pkgpath": "Data/resources.assets",
    "size": 522608,
    "src": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/resources.assets"
@@ -200,9 +200,9 @@
   },
   {
    "compression": 8,
-   "hash": "fdbd4e7a81c36812c2f2a3f5abf8f988240e2b7f",
+   "hash": "0341504c4a5e1e44fd92223cae62ebc8dfefeb0b",
    "pkgpath": "Data/sharedassets0.assets",
-   "size": 1605516,
+   "size": 1606180,
    "src": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/sharedassets0.assets"
   },
   {
@@ -211,6 +211,13 @@
    "pkgpath": "Data/sharedassets0.assets.resS",
    "size": 24854880,
    "src": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/sharedassets0.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "a67d5cc9d8390c260df06016b3a1b89c480531e0",
+   "pkgpath": "Data/sharedassets0.resource",
+   "size": 3829408,
+   "src": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/sharedassets0.resource"
   },
   {
    "compression": 8,
@@ -253,7 +260,7 @@
    "hash": "5925de9f4d7b83c65d1fd7b25ced5f0bf8c27e73",
    "pkgpath": "bin/libc++_shared.so",
    "size": 976832,
-   "src": "/Users/samhoud/MagicLeap/mlsdk/v0.20.0/lumin/stl/libc++/lib/libc++_shared.so",
+   "src": "/Users/samhoud/MagicLeap/mlsdk/v0.21.0/lumin/stl/libc++/lib/libc++_shared.so",
    "xfrm_flags": {
     "signed": {
      "cert": "/Users/samhoud/Downloads/privatekey/hellomagicleap.cert"
@@ -265,7 +272,7 @@
     }
    },
    "xfrm_hash": "1426e1e9f38bc1571ccc96a310c37fd237599f20",
-   "xfrm_path": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/.out/.cache/debug_lumin_clang-3.8_aarch64/com.samhoud.theportal-03b7aaf83c990733/libc++_shared.so-bf9491a76782d457",
+   "xfrm_path": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/.out/.cache/debug_lumin_clang-3.8_aarch64/com.samhoud.theportal-03b7aaf83c990733/libc++_shared.so-39681b3bf4f814f8",
    "xfrm_size": 977590
   }
  ],

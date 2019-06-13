@@ -12,11 +12,9 @@
 
 namespace UnityEngine.XR.MagicLeap
 {
-    /// <summary>
+   
     /// Script used to position this Canvas object directly in front of the user by
-    /// using lerp functionality to give it a smooth look. Components on the canvas
-    /// should function normally.
-    /// </summary>
+    /// using lerp functionality to give it a smooth look. Components on the canvas should function normally.
     [RequireComponent(typeof(Canvas))]
     public class HeadposeCanvas : MonoBehaviour
     {
@@ -41,16 +39,14 @@ namespace UnityEngine.XR.MagicLeap
 
 
         #region Unity Methods
-        /// <summary>
+    
         /// Initializes variables and verifies that necessary components exist.
-        /// </summary>
         void Awake()
         {
             _canvas = GetComponent<Canvas>();
             _camera = _canvas.worldCamera;
 
-            // Disable this component if
-            // it failed to initialize properly.
+            // Disable this component if it failed to initialize properly.
             if (_canvas == null)
             {
                 Debug.LogError("Error: HeadposeCanvas._canvas is not set, disabling script.");
@@ -65,9 +61,7 @@ namespace UnityEngine.XR.MagicLeap
             }
         }
 
-        /// <summary>
         /// Update position and rotation of this canvas object to face the camera using lerp for smoothness.
-        /// </summary>
         void Update()
         {
             // Move the object CanvasDistance units in front of the camera.

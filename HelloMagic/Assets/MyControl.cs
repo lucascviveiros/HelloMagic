@@ -19,10 +19,12 @@ public class MyControl : MonoBehaviour
         _camera = GameObject.Find("Main Camera");
         _monalisa = GameObject.Find("Monalisa");
     }
+
     private void OnDestroy()
     {
         MLInput.Stop();
     }
+
     private void Update()
     {
         if (_controller.TriggerValue > 0.2f)
@@ -32,4 +34,5 @@ public class MyControl : MonoBehaviour
             persistentBehavior.UpdateBinding();
         }
     }
+
 }

@@ -37,9 +37,8 @@ namespace MagicLeap
         #endregion
 
         #region Unity Methods
-        /// <summary>
+
         /// Initialize variables, callbacks and check null references.
-        /// </summary>
         void Start()
         {
             _controllerConnectionHandler = GetComponent<ControllerConnectionHandler>();
@@ -49,9 +48,7 @@ namespace MagicLeap
             MLInput.OnControllerButtonUp += HandleOnButtonUp;
         }
 
-        /// <summary>
         /// Update controller input based feedback.
-        /// </summary>
         void Update()
         {
             if (_controllerConnectionHandler.IsControllerValid())
@@ -89,11 +86,8 @@ namespace MagicLeap
         #endregion
 
         #region Event Handlers
-        /// <summary>
+
         /// For Mobile App, this initiates/ends the recalibration when the home tap event is triggered
-        /// </summary>
-        /// <param name="controllerId">The id of the controller.</param>
-        /// <param name="button">The button that is being released.</param>
         private void HandleOnButtonUp(byte controllerId, MLInputControllerButton button)
         {
             MLInputController controller = _controllerConnectionHandler.ConnectedController;

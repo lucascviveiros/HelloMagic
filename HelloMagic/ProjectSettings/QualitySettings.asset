@@ -75,7 +75,8 @@ QualitySettings:
     asyncUploadBufferSize: 16
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    excludedTargetPlatforms: []
+    excludedTargetPlatforms:
+    - Lumin
   - serializedVersion: 2
     name: Medium
     pixelLightCount: 1
@@ -110,7 +111,8 @@ QualitySettings:
     asyncUploadBufferSize: 16
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    excludedTargetPlatforms: []
+    excludedTargetPlatforms:
+    - Lumin
   - serializedVersion: 2
     name: High
     pixelLightCount: 2
@@ -145,7 +147,8 @@ QualitySettings:
     asyncUploadBufferSize: 16
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    excludedTargetPlatforms: []
+    excludedTargetPlatforms:
+    - Lumin
   - serializedVersion: 2
     name: Very High
     pixelLightCount: 3
@@ -180,7 +183,8 @@ QualitySettings:
     asyncUploadBufferSize: 16
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    excludedTargetPlatforms: []
+    excludedTargetPlatforms:
+    - Lumin
   - serializedVersion: 2
     name: Ultra
     pixelLightCount: 2
@@ -215,10 +219,11 @@ QualitySettings:
     asyncUploadBufferSize: 16
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
-    excludedTargetPlatforms: []
+    excludedTargetPlatforms:
+    - Lumin
   m_PerPlatformDefaultQuality:
     Android: 2
-    Lumin: 3
+    Lumin: 0
     Nintendo 3DS: 5
     Nintendo Switch: 5
     PS4: 5

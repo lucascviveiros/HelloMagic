@@ -25,9 +25,8 @@ namespace UnityEngine.XR.MagicLeap
     public sealed class ControllerConnectionHandler : MonoBehaviour
     {
         #region Public Enum
-        /// <summary>
+
         /// Flags to determine which input devices to allow
-        /// </summary>
         [Flags]
         public enum DeviceTypesAllowed : int
         {
@@ -45,9 +44,8 @@ namespace UnityEngine.XR.MagicLeap
         #endregion
 
         #region Public Variables
-        /// <summary>
+
         /// Getter for the first allowed connected device, could return null.
-        /// </summary>
         public MLInputController ConnectedController
         {
             get
@@ -56,9 +54,7 @@ namespace UnityEngine.XR.MagicLeap
             }
         }
 
-        /// <summary>
         /// Getter for devices allowed bitmask
-        /// </summary>
         public DeviceTypesAllowed DevicesAllowed
         {
             get
@@ -69,21 +65,17 @@ namespace UnityEngine.XR.MagicLeap
         #endregion
 
         #region Public Events
-        /// <summary>
+
         /// Invoked when a valid controller has connected.
-        /// </summary>
         public event Action<byte> OnControllerConnected;
 
-        /// <summary>
         /// Invoked when an invalid controller has disconnected.
-        /// </summary>
         public event Action<byte> OnControllerDisconnected;
         #endregion
 
         #region Unity Methods
-        /// <summary>
+
         /// Starts the MLInput, initializes the first controller, and registers the connection handlers
-        /// </summary>
         void Awake()
         {
             if (_devicesAllowed == 0)
@@ -117,9 +109,7 @@ namespace UnityEngine.XR.MagicLeap
             GetAllowedInput();
         }
 
-        /// <summary>
         /// Unregisters the connection handlers and stops the MLInput
-        /// </summary>
         void OnDestroy()
         {
             if (MLInput.IsStarted)
@@ -134,10 +124,9 @@ namespace UnityEngine.XR.MagicLeap
         #endregion
 
         #region Private Methods
-        /// <summary>
+
         /// Fills allowed connected devices list with all the connected controllers matching
         /// types set in _devicesAllowed.
-        /// </summary>
         private void GetAllowedInput()
         {
             _allowedConnectedDevices.Clear();
@@ -152,9 +141,7 @@ namespace UnityEngine.XR.MagicLeap
             }
         }
 
-        /// <summary>
         /// Checks if a controller exists, is connected, and is allowed.
-        /// </summary>
         /// <param name="controller">The controller to be checked for</param>
         /// <returns>True if the controller exists, is connected, and is allowed</returns>
         private bool IsDeviceAllowed(MLInputController controller)
@@ -171,12 +158,11 @@ namespace UnityEngine.XR.MagicLeap
         #endregion
 
         #region Public Methods
-        /// <summary>
+
         /// Checks if there is a controller in the list. This method
         /// does not check if the controller is of the allowed device type
         /// since that's handled by the connection/disconnection handlers.
         /// Should not be called from Awake() or OnEnable().
-        /// </summary>
         /// <returns>True if the controller is ready for use, false otherwise</returns>
         public bool IsControllerValid()
         {
@@ -224,11 +210,9 @@ namespace UnityEngine.XR.MagicLeap
             }
         }
 
-        /// <summary>
         /// Handles the event when a controller disconnects. If the disconnected
         /// controller happens to be in the _allowedConnectedDevices list, we
         /// remove it from the list.
-        /// </summary>
         /// <param name="controllerId">The id of the controller.</param>
         private void HandleOnControllerDisconnected(byte controllerId)
         {

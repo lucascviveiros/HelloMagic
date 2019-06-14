@@ -38,9 +38,8 @@ namespace MagicLeap
         #endregion
 
         #region Unity Methods
-        /// <summary>
+
         /// Initializes component data and starts MLInput.
-        /// </summary>
         void Awake()
         {
             _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
@@ -93,9 +92,8 @@ namespace MagicLeap
         #endregion
 
         #region Private Methods
-        /// <summary>
+
         /// Update the color depending on the controller connection.
-        /// </summary>
         private void UpdateColor()
         {
             if (_controllerConnectionHandler.enabled)
@@ -115,9 +113,7 @@ namespace MagicLeap
             }
         }
 
-        /// <summary>
         /// Update Icon to show type of connected icon or device allowed.
-        /// </summary>
         private void UpdateIcon()
         {
             if (_controllerConnectionHandler.enabled &&
@@ -139,10 +135,8 @@ namespace MagicLeap
             }
         }
 
-        /// <summary>
         /// This will set the default icon used to represent the controller.
         /// When the device controller is excluded, MobileApp will be used instead.
-        /// </summary>
         private void SetDefaultIcon()
         {
             if ((_controllerConnectionHandler.DevicesAllowed & ControllerConnectionHandler.DeviceTypesAllowed.ControllerLeft) != 0 ||

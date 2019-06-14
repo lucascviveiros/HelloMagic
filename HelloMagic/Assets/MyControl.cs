@@ -8,16 +8,20 @@ using UnityEngine.UI;
 public class MyControl : MonoBehaviour
 {
     public MLPersistentBehavior persistentBehavior;
-    private GameObject _monalisa, _camera;
+    private GameObject _myObject, _camera;
     private MLInputController _controller;
-    private const float _distance = 2.0f;
+    private const float _distance = 1.0f;
+
+    public Text myText;
+
+    public SpaceshipController spaceship;
 
     private void Awake()
     {
         MLInput.Start();
         _controller = MLInput.GetController(MLInput.Hand.Left);
         _camera = GameObject.Find("Main Camera");
-        _monalisa = GameObject.Find("Monalisa");
+        _myObject = GameObject.Find("PlayerShip");
     }
 
     private void OnDestroy()
@@ -27,11 +31,34 @@ public class MyControl : MonoBehaviour
 
     private void Update()
     {
-        if (_controller.TriggerValue > 0.2f)
+        //if (_controller.TriggerValue > 0.2f)
+       // {
+       //     _myObject.transform.position = _controller.Position + _camera.transform.forward * _distance;
+       //     _myObject.transform.rotation = _camera.transform.rotation;
+      //      persistentBehavior.UpdateBinding();
+      //  }
+
+        if (_controller.IsBumperDown) {
+             _myObject.transform.position = _controller.Position + _camera.transform.forward * _distance;
+             _myObject.transform.rotation = _camera.transform.rotation;
+            // persistentBehavior.UpdateBinding();
+
+        }
+
+        //float fval = _controller.TriggerValue;
+        //spaceship.GoSpaceship(fval);
+        //myText.text = _controller.TouchpadGesture.Direction.ToString(); 
+     
+
+        //Clockwise Counterclockwise
+
+        if (_controller.TouchpadGesture.Direction.ToString() == "Clockwise") {
+            spaceship.TurnRight();
+        }
+
+        if (_controller.TouchpadGesture.Direction.ToString() == "CounterClockwise")
         {
-            _monalisa.transform.position = _controller.Position + _camera.transform.forward * _distance;
-            _monalisa.transform.rotation = _camera.transform.rotation;
-            persistentBehavior.UpdateBinding();
+            spaceship.TurnRight();
         }
     }
 

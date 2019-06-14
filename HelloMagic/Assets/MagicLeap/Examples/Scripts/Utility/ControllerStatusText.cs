@@ -33,9 +33,8 @@ namespace MagicLeap
         #endregion
 
         #region Unity Methods
-        /// <summary>
+
         /// Initializes component data and starts MLInput.
-        /// </summary>
         void Awake()
         {
             _controllerStatusText = gameObject.GetComponent<Text>();
@@ -73,9 +72,8 @@ namespace MagicLeap
         #endregion
 
         #region Private Methods
-        /// <summary>
+
         /// Update the text for the currently connected Control or MCA device.
-        /// </summary>
         private void UpdateStatus()
         {
             if (_controllerConnectionHandler.enabled)

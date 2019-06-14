@@ -1,6 +1,9 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Bala
+    - InimigoIA
+    - MagicLeap.ControllerFeedbackExample
     - MagicLeap.ControllerStatsText
     - MagicLeap.ControllerStatusIndicator
     - MagicLeap.ControllerStatusText
@@ -8,10 +11,25 @@ ScriptsOnlyBuild:
     - MagicLeap.ControllerVisualizer
     - MagicLeap.PlaceFromCamera
     - MagicLeap.VideoError
+    - MyControl
+    - PlaneController
+    - Ship
+    - ShipInput
+    - ShipPhysics
+    - SkyboxChanger
+    - SpaceshipController
+    - SpinFree
+    - TieController
+    - Tiro
+    - TouchpadGestures
     - UnityEngine.XR.MagicLeap.ControllerConnectionHandler
     - UnityEngine.XR.MagicLeap.HeadposeCanvas
     - UnityEngine.XR.MagicLeap.MagicLeapSceneOptimizer
     - UnityEngine.XR.MagicLeap.PrivilegeDeniedError
+    - UnityStandardAssets.Effects.AfterburnerPhysicsForce
+    - UnityStandardAssets.Effects.ExplosionPhysicsForce
+    - UnityStandardAssets.Effects.ParticleSystemMultiplier
+    - WarpSpeed
     LuminMediaPlayer.dll:
     - UnityEngine.XR.MagicLeap.MLMediaPlayer
     UnityEditor.TestRunner.dll:
@@ -20,12 +38,19 @@ ScriptsOnlyBuild:
     - UnityEngine.SpatialTracking.TrackedPoseDriver
     UnityEngine.UI.dll:
     - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.Dropdown
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.Mask
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
+    - UnityEngine.UI.Toggle
     UnityEngine.XR.MagicLeap.dll:
+    - UnityEngine.XR.MagicLeap.MLSpatialMapper
     - UnityEngine.XR.MagicLeap.Rendering.MagicLeapCamera
   sceneClasses:
-    Assets/Scenes/Intro.unity:
+    Assets/Scenes/SpaceshipControl.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -46,11 +71,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 92
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 96
       Script: {instanceID: 0}
@@ -60,57 +93,111 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 111
+      Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9426}
+      Script: {instanceID: 9432}
     - Class: 114
-      Script: {instanceID: 9604}
+      Script: {instanceID: 9508}
     - Class: 114
-      Script: {instanceID: 9688}
+      Script: {instanceID: 9528}
     - Class: 114
-      Script: {instanceID: 9768}
+      Script: {instanceID: 9530}
     - Class: 114
-      Script: {instanceID: 9780}
+      Script: {instanceID: 9598}
+    - Class: 114
+      Script: {instanceID: 9626}
+    - Class: 114
+      Script: {instanceID: 9714}
+    - Class: 114
+      Script: {instanceID: 9796}
+    - Class: 114
+      Script: {instanceID: 9800}
+    - Class: 114
+      Script: {instanceID: 9808}
+    - Class: 114
+      Script: {instanceID: 9816}
+    - Class: 114
+      Script: {instanceID: 9824}
     - Class: 114
       Script: {instanceID: 9842}
     - Class: 114
-      Script: {instanceID: 9932}
+      Script: {instanceID: 9844}
     - Class: 114
-      Script: {instanceID: 10080}
+      Script: {instanceID: 9854}
     - Class: 114
-      Script: {instanceID: 10158}
+      Script: {instanceID: 9856}
     - Class: 114
-      Script: {instanceID: 10306}
+      Script: {instanceID: 9870}
     - Class: 114
-      Script: {instanceID: 10770}
+      Script: {instanceID: 9918}
     - Class: 114
-      Script: {instanceID: 11040}
+      Script: {instanceID: 9962}
     - Class: 114
-      Script: {instanceID: 11050}
+      Script: {instanceID: 10110}
     - Class: 114
-      Script: {instanceID: 11070}
+      Script: {instanceID: 10188}
     - Class: 114
-      Script: {instanceID: 11108}
+      Script: {instanceID: 10338}
     - Class: 114
-      Script: {instanceID: 11386}
+      Script: {instanceID: 10344}
     - Class: 114
-      Script: {instanceID: 11484}
+      Script: {instanceID: 10480}
     - Class: 114
-      Script: {instanceID: 15576}
+      Script: {instanceID: 10552}
     - Class: 114
-      Script: {instanceID: 15578}
+      Script: {instanceID: 10722}
     - Class: 114
-      Script: {instanceID: 15580}
+      Script: {instanceID: 10732}
     - Class: 114
-      Script: {instanceID: 15582}
+      Script: {instanceID: 10826}
+    - Class: 114
+      Script: {instanceID: 10892}
+    - Class: 114
+      Script: {instanceID: 10910}
+    - Class: 114
+      Script: {instanceID: 10936}
+    - Class: 114
+      Script: {instanceID: 11086}
+    - Class: 114
+      Script: {instanceID: 11112}
+    - Class: 114
+      Script: {instanceID: 11118}
+    - Class: 114
+      Script: {instanceID: 11124}
+    - Class: 114
+      Script: {instanceID: 11144}
+    - Class: 114
+      Script: {instanceID: 11182}
+    - Class: 114
+      Script: {instanceID: 11200}
+    - Class: 114
+      Script: {instanceID: 11468}
+    - Class: 114
+      Script: {instanceID: 11512}
+    - Class: 114
+      Script: {instanceID: 11568}
+    - Class: 114
+      Script: {instanceID: 11642}
+    - Class: 114
+      Script: {instanceID: 11660}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
@@ -149,6 +236,12 @@ ScriptsOnlyBuild:
     className: TMP_SelectionCaret
   - hash:
       serializedVersion: 2
+      Hash: 3748fbad2d474a315bda516b8363a0c5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityStandardAssets.Effects
+    className: ExtinguishableParticleSystem
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -179,6 +272,12 @@ ScriptsOnlyBuild:
     className: PlaneVisualizer
   - hash:
       serializedVersion: 2
+      Hash: 3748fbad2d474a315bda516b8363a0c5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityStandardAssets.Effects
+    className: ParticleSystemMultiplier
+  - hash:
+      serializedVersion: 2
       Hash: 2f6ac73f0b768f793e83fa338c167ba7
     assemblyName: Assembly-CSharp.dll
     namespaceName: MagicLeap
@@ -191,10 +290,22 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
-      Hash: c6104606cfcc90ff6cbaa0d38247a115
+      Hash: 0faadf7f444e033f28a19470d1ae257b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityStandardAssets.Effects
+    className: ExplosionPhysicsForce
+  - hash:
+      serializedVersion: 2
+      Hash: a80b305f03e694cb93fbdbd5e45e0d96
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TouchpadGestures
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EndTimeLineCena1
   - hash:
       serializedVersion: 2
       Hash: eb9e20e509c41cb36f9b34529b96af2f
@@ -213,6 +324,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
     namespaceName: UnityEngine.XR.LegacyInputHelpers
     className: ArmModel
+  - hash:
+      serializedVersion: 2
+      Hash: 20240431c815058690a3ba9bdfb91802
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LookCamera
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -251,6 +368,12 @@ ScriptsOnlyBuild:
     className: PersistentBall
   - hash:
       serializedVersion: 2
+      Hash: 986b139ca7a068f2f7c87e46fbae9ec9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SpaceshipController
+  - hash:
+      serializedVersion: 2
       Hash: 275be86034801858be343230f24b60b3
     assemblyName: Assembly-CSharp.dll
     namespaceName: MagicLeap
@@ -261,6 +384,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: MagicLeap
     className: ControllerStatsText
+  - hash:
+      serializedVersion: 2
+      Hash: d63aae503ada135df9e49dad6d9fb277
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityStandardAssets.Effects
+    className: Hose
+  - hash:
+      serializedVersion: 2
+      Hash: 9bdb25d3f2854dccec6779d13c0af40f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RandomAreaSpawner
   - hash:
       serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
@@ -465,6 +600,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 352455aaadb8c98ff36ead557753abfa
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: TiltInput
   - hash:
       serializedVersion: 2
       Hash: fc5a4de027bdcf90030970ab3248bf9a
@@ -707,6 +848,12 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
+      Hash: 86569455a9c61f709df8ceac66f72825
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Tiro
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: MagicLeap
@@ -875,6 +1022,12 @@ ScriptsOnlyBuild:
     className: WorldScale
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemieAttack
+  - hash:
+      serializedVersion: 2
       Hash: 11350d9ac428a7b231def57b3d26aac3
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleARCore.HelloAR
@@ -897,6 +1050,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ControlTrack
+  - hash:
+      serializedVersion: 2
+      Hash: a8b6c919b2049fcc280823488144371f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: Joystick
   - hash:
       serializedVersion: 2
       Hash: 0077fc8e4fbae67f80e80ebd534de5a0
@@ -1101,6 +1260,18 @@ ScriptsOnlyBuild:
     assemblyName: Vuforia.UnityExtensions.dll
     namespaceName: Vuforia
     className: WireframeTrackableEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TieController
+  - hash:
+      serializedVersion: 2
+      Hash: 095670c2b21e91be9772d13c29533e75
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Cena2Controller
   - hash:
       serializedVersion: 2
       Hash: 048bdb34e5cafd7a4cfeac11800a1add
@@ -1343,6 +1514,24 @@ ScriptsOnlyBuild:
     className: ARCoreBackgroundRenderer
   - hash:
       serializedVersion: 2
+      Hash: 76ef99ab06fa416460fecc9f090d06bc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WarpSpeed
+  - hash:
+      serializedVersion: 2
+      Hash: 4bd1cc3c85989d2213a9a8fd9d09e63f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: InputAxisScrollbar
+  - hash:
+      serializedVersion: 2
+      Hash: fdd7177da17032ba94d98037cc97bb49
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: AxisTouchButton
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1391,6 +1580,12 @@ ScriptsOnlyBuild:
     className: PathAroundObject
   - hash:
       serializedVersion: 2
+      Hash: c88c4199b288356ec3eb2f0d85abc619
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: ButtonHandler
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1407,6 +1602,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Analytics.Editor.dll
     namespaceName: UnityEditor.Analytics
     className: AnalyticsEventTrackerEditor
+  - hash:
+      serializedVersion: 2
+      Hash: 86569455a9c61f709df8ceac66f72825
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyAttack
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1433,13 +1634,19 @@ ScriptsOnlyBuild:
     className: WorldRaycastEyes
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: MobileControlRig
+  - hash:
+      serializedVersion: 2
       Hash: ed87896b003033d2333c2a897989aa8a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CannonBehavior
   - hash:
       serializedVersion: 2
-      Hash: b1cb02d0a7926eb16344948a4844cccf
+      Hash: e27a0d1c718fd850ddb00853af1d5767
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MyControl
@@ -1449,6 +1656,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: MagicLeap
     className: ImageTrackingVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: 9df954eca51e9f2b95915ae2918e4258
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityStandardAssets.Effects
+    className: AfterburnerPhysicsForce
   - hash:
       serializedVersion: 2
       Hash: 26dd93e0c5a3e5bab513c938a09201ef
@@ -1469,10 +1682,22 @@ ScriptsOnlyBuild:
     className: SpriteSequenceAnimation
   - hash:
       serializedVersion: 2
+      Hash: 6c0e13b94c80722da40b5edd3b4cd0b8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Explosion
+  - hash:
+      serializedVersion: 2
       Hash: 22576aa5734de0f629daab94d0680a7b
     assemblyName: Assembly-CSharp.dll
     namespaceName: MagicLeap
     className: ImageTrackingExample
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityStandardAssets.Effects
+    className: FireLight
   - hash:
       serializedVersion: 2
       Hash: 940e9d1e653b56909ba624a694765cc6
@@ -1499,10 +1724,22 @@ ScriptsOnlyBuild:
     className: ControllerVisualizer
   - hash:
       serializedVersion: 2
+      Hash: 2294ba4929e515b4b46046eff1f6b057
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityStandardAssets.Effects
+    className: ExplosionFireAndDebris
+  - hash:
+      serializedVersion: 2
       Hash: 6f0e3a400e15ada335ba87d4688ff2e3
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityEngine.XR.MagicLeap
     className: HandTracking
+  - hash:
+      serializedVersion: 2
+      Hash: fa28ac1ce0744dd5e806106eaa28018d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Ship
   - hash:
       serializedVersion: 2
       Hash: aafde154c46abbd1a42af4a04c036844
@@ -1523,10 +1760,22 @@ ScriptsOnlyBuild:
     className: InstantPreviewTrackedPoseDriver
   - hash:
       serializedVersion: 2
+      Hash: dea515bdd1d901b0bf90ab15e17d6d6d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SpinFree
+  - hash:
+      serializedVersion: 2
       Hash: 92995c680a3d85887162562cf5c0feea
     assemblyName: Assembly-CSharp.dll
     namespaceName: MagicLeap
     className: VideoCaptureExample
+  - hash:
+      serializedVersion: 2
+      Hash: ec9b28b98d9ad00d47cbdf262ca45fb9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShipPhysics
   - hash:
       serializedVersion: 2
       Hash: 3f8d7b92a6be3c715e55d5cfa7cc8384
@@ -1581,6 +1830,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: UnityEngine.XR.MagicLeap
     className: Planes
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EndProFinal
   - hash:
       serializedVersion: 2
       Hash: 88cc9df3c6fc697bfbeacd24c0d6f2d7
@@ -1643,6 +1898,18 @@ ScriptsOnlyBuild:
     className: ARCoreSessionConfig
   - hash:
       serializedVersion: 2
+      Hash: cf369ba3f714af84102aaf7236881468
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShipInput
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AcaoBotao
+  - hash:
+      serializedVersion: 2
       Hash: 37f9065fac79dd2c97d8495e1f4c29a6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1653,6 +1920,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: MagicLeap
     className: ControllerTransform
+  - hash:
+      serializedVersion: 2
+      Hash: f9a3fa795fdc45b44f33cc2a28c5a2ca
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SkyboxChanger
   - hash:
       serializedVersion: 2
       Hash: 8cfb65feb9d4f736b24134830e717c23
@@ -1715,10 +1988,22 @@ ScriptsOnlyBuild:
     className: VolumetricLineBehavior
   - hash:
       serializedVersion: 2
+      Hash: 6074452557103d09db3a4e66a1b54725
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Final
+  - hash:
+      serializedVersion: 2
       Hash: 516824a435828eadd660ef2f1658a48e
     assemblyName: Unity.Analytics.DataPrivacy.dll
     namespaceName: UnityEngine.Analytics
     className: DataPrivacyButton
+  - hash:
+      serializedVersion: 2
+      Hash: b9048d3760274b9fd3dc94b75b3d0f96
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityStandardAssets.Effects
+    className: WaterHoseParticles
   - hash:
       serializedVersion: 2
       Hash: f336e086360abe49a3323e5f1583c35a
@@ -1731,6 +2016,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: MagicLeap
     className: PlacementVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: 323ef9904ec6149348cdcc45975c0dbe
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityStandardAssets.Effects
+    className: SmokeParticles
   - hash:
       serializedVersion: 2
       Hash: 6d3415f5790486525144973c2d113e95
@@ -1769,6 +2060,12 @@ ScriptsOnlyBuild:
     className: ContactsButton
   - hash:
       serializedVersion: 2
+      Hash: 219ec6059796d8951d2adcd8505d0dc2
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: UnityStandardAssets.CrossPlatformInput
+    className: TouchPad
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleARCore.HelloAR
@@ -1803,6 +2100,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: MarkerTrack
+  - hash:
+      serializedVersion: 2
+      Hash: c4862302e6c48b393e8275439fdf6da0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlaneController
   - hash:
       serializedVersion: 2
       Hash: d791aa6007fa3640be1164ea75bb087d
@@ -1853,10 +2156,22 @@ ScriptsOnlyBuild:
     className: MediaPlayerExample
   - hash:
       serializedVersion: 2
+      Hash: a2c000a492279ec2096287d7162324bf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Bala
+  - hash:
+      serializedVersion: 2
       Hash: b3c4d6d2ec3bf1231fdecd4daaab21da
     assemblyName: Assembly-CSharp.dll
     namespaceName: MagicLeap
     className: MediaPlayerButton
+  - hash:
+      serializedVersion: 2
+      Hash: 80061ea9a918d777f0b97d626d9a2297
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InimigoIA
   - hash:
       serializedVersion: 2
       Hash: 925c7c4b84532641f89dd66213c13c61
@@ -2337,25 +2652,7 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: MagicLeap
     className: DeepSeaExplorerLauncher
-  - hash:
-      serializedVersion: 2
-      Hash: 1180f1d8e5bab2e14d2dba6d144e8665
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ShipInput
-  - hash:
-      serializedVersion: 2
-      Hash: fa28ac1ce0744dd5e806106eaa28018d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Ship
-  - hash:
-      serializedVersion: 2
-      Hash: ec9b28b98d9ad00d47cbdf262ca45fb9
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ShipPhysics
   platform: 39
   scenePathNames:
-  - Assets/Scenes/Intro.unity
-  playerPath: /Users/samhoud/Desktop/light.mpk
+  - Assets/Scenes/SpaceshipControl.unity
+  playerPath: /Users/samhoud/Desktop/spaceshiptest.mpk

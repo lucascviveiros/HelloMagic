@@ -1,15 +1,14 @@
 ﻿<Properties StartupConfiguration="{A7EFE92A-6E43-0ED6-648B-CD35BBB20F36}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TouchpadGestures.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Tiro.cs">
     <Files>
-      <File FileName="Assets/MagicLeap/Examples/Scripts/MediaPlayerExample.cs" Line="100" Column="10" />
-      <File FileName="Assets/Scripts/TouchpadGestures.cs" Line="47" Column="27" />
-      <File FileName="Assets/Scripts/ObjectRaycast.cs" Line="37" Column="14" />
-      <File FileName="Assets/MagicLeap/Examples/Scripts/Visualizers/ContentDragHandler.cs" Line="86" Column="32" />
-      <File FileName="Assets/MagicLeap/CoreComponents/MLPersistentBehavior.cs" Line="334" Column="29" />
-      <File FileName="Assets/MyControl.cs" Line="10" Column="25" />
-      <File FileName="Assets/MagicLeap/CoreComponents/PrivilegeRequester.cs" Line="22" Column="36" />
-      <File FileName="Assets/MagicLeap/CoreComponents/HeadposeCanvas.cs" Line="22" Column="43" />
-      <File FileName="Assets/MagicLeap/Examples/Scripts/Visualizers/ControllerVisualizer.cs" Line="248" Column="10" />
+      <File FileName="Assets/Scripts/TouchpadGestures.cs" Line="45" Column="1" />
+      <File FileName="Assets/My Space ship/Ship.cs" Line="23" Column="28" />
+      <File FileName="Assets/My Space ship/ShipInput.cs" Line="73" Column="41" />
+      <File FileName="Assets/My Space ship/ShipPhysics.cs" Line="1" Column="1" />
+      <File FileName="Assets/MagicLeap/Examples/Scripts/ControllerFeedbackExample.cs" Line="138" Column="10" />
+      <File FileName="Assets/MagicLeap/Examples/Scripts/Visualizers/ControllerVisualizer.cs" Line="194" Column="55" />
+      <File FileName="Assets/MagicLeap/Examples/Scripts/Utility/ControllerTransform.cs" Line="60" Column="61" />
+      <File FileName="Assets/Scripts/Tiro.cs" Line="29" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

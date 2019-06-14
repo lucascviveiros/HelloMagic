@@ -8,16 +8,19 @@ public class TouchpadGestures : MonoBehaviour
 {
     public Text typeText, stateText, directionText;
     public Camera Camera;
+    public SpaceshipController spaceship;
 
     #region Private Variables
     private MLInputController _controller;
-    #endregion
 
+    #endregion
+    
     #region Unity Methods
     void Start()
     {
         MLInput.Start();
         _controller = MLInput.GetController(MLInput.Hand.Left);
+        Time.timeScale = 1.0f;
     }
 
     void OnDestroy()
@@ -30,6 +33,7 @@ public class TouchpadGestures : MonoBehaviour
         updateTransform();
         updateGestureText();
     }
+
     #endregion
 
     #region Private Methods
@@ -42,7 +46,19 @@ public class TouchpadGestures : MonoBehaviour
         typeText.text = "Type: " + gestureType;
         stateText.text = "State: " + gestureState;
         directionText.text = "Direction: " + gestureDirection;
+
+        if (gestureDirection == "up" || gestureDirection == "Up" || gestureType == "Tap") 
+        {
+        } 
+
+        if(gestureDirection == "down") 
+        {
+            spaceship.BackSpaceship();
+        }
     }
+
+    //state: start, continue, end
+    //direction: up, down, left, right
 
     void updateTransform()
     {

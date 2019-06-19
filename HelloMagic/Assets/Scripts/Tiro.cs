@@ -13,11 +13,12 @@ public class Tiro : MonoBehaviour {
     {
         MLInput.Start();
         _controller = MLInput.GetController(MLInput.Hand.Left);
+
     }
 
     void Update () 
     {
-		if (_controller.IsBumperDown || Input.GetKey(KeyCode.Space)) 
+        if (_controller.IsBumperDown || Input.GetKey(KeyCode.Space)) 
         {
 			Fire();
 		}
@@ -34,6 +35,7 @@ public class Tiro : MonoBehaviour {
 		rb.velocity = bulletSpawn.transform.forward * 10.0f;
 		//rb.AddForce(bulletSpawn.transform.forward * 10.0f);
 
-		//Destroy (bullet, 15.0f);
+		Destroy (bullet, 15.0f);
 	}
+
 }

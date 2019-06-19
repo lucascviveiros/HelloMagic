@@ -55,56 +55,56 @@ public class ShipInput : MonoBehaviour
     {
         if (_controller.Connected)
         {
-           // myTrigger.text = ">" + _controller.TouchpadGesture..ToString() + "\n Gesture 2: " + _controller.Touch1PosAndForce.y.ToString();
-            myTrigger.text = "Y!:" + _controller.Orientation.y.ToString()+ "\n" + "X!:" + _controller.Orientation.x.ToString() + "Z!:" + _controller.Orientation.z.ToString();
+            myTrigger.text = "Y: " + _controller.Orientation.y.ToString()+ "\n" + "X: " + _controller.Orientation.x.ToString() + "\n" + "Z: " + _controller.Orientation.z.ToString();
 
             //Aceleracao 
             float acelera = _controller.TriggerValue; //0 a 1
             Update6DOFThrottle(acelera);
 
-
             //TurnRight
             if ((_controller.TouchpadGesture.Type.ToString() == "Swipe" || _controller.TouchpadGesture.Type.ToString() == "Tap")
-                    && _controller.Touch1PosAndForce.x > 0.1 && _controller.Touch1PosAndForce.z > 0 && _controller.TouchpadGesture.Direction.ToString() == "Right")
+                   // && _controller.Touch1PosAndForce.x > 0.1 
+                    && _controller.Touch1PosAndForce.z > 0 && _controller.TouchpadGesture.Direction.ToString() == "Right")
             {
                 TurnRightLeft(sideSpeed);
             }
 
             //TurnLeft
-            else if ((_controller.TouchpadGesture.Type.ToString() == "Swipe" || _controller.TouchpadGesture.Type.ToString() == "Tap")
-                    &&_controller.Touch1PosAndForce.x < -0.1 && _controller.Touch1PosAndForce.z > 0 && _controller.TouchpadGesture.Direction.ToString() == "Left")
+            if ((_controller.TouchpadGesture.Type.ToString() == "Swipe" || _controller.TouchpadGesture.Type.ToString() == "Tap")
+                   // &&_controller.Touch1PosAndForce.x < -0.1 
+                    && _controller.Touch1PosAndForce.z > 0 && _controller.TouchpadGesture.Direction.ToString() == "Left")
             {
                 TurnRightLeft(-sideSpeed);
             }
 
             //UP
-            else if (_controller.Touch1PosAndForce.y > 0.1 && _controller.Touch1PosAndForce.z > 0
+            if (_controller.Touch1PosAndForce.y > 0.1 && _controller.Touch1PosAndForce.z > 0
                         && (_controller.Touch1PosAndForce.x > -0.3 && _controller.Touch1PosAndForce.x < 0.3)
-                            && _controller.TouchpadGesture.Type.ToString() == "ForceTapUp")// && _controller.TouchpadGesture.Direction.ToString() == "Up") 
+                            && (_controller.TouchpadGesture.Type.ToString() == "ForceTapUp" || _controller.TouchpadGesture.Type.ToString() == "Tap"))// && _controller.TouchpadGesture.Direction.ToString() == "Up") 
             {
                 transform.Rotate(5.625f, 0.0f, 0.0f);
             }
 
             //DOWN
-            else if (_controller.Touch1PosAndForce.y < -0.1 && _controller.Touch1PosAndForce.z > 0
+            if (_controller.Touch1PosAndForce.y < -0.1 && _controller.Touch1PosAndForce.z > 0
                         && (_controller.Touch1PosAndForce.x > -0.3 && _controller.Touch1PosAndForce.x < 0.3)
-                            && _controller.TouchpadGesture.Type.ToString() == "ForceTapDown")// && _controller.TouchpadGesture.Direction.ToString() == "Down")
+                            && (_controller.TouchpadGesture.Type.ToString() == "ForceTapDown" || _controller.TouchpadGesture.Type.ToString() == "Tap"))// && _controller.TouchpadGesture.Direction.ToString() == "Down")
             {
                 transform.Rotate(-5.625f, 0.0f, 0.0f);
             }
 
-            // Orientacao Y
-           /* if (_controller.Orientation.y < -0.2 && (_controller.Orientation.x > -0.5 && _controller.Orientation.x < 0.1) && _controller.TriggerValue > 0.2) 
-            {
-//                transform.Rotate(0.0f, 0.0f, -_controller.Orientation.y * 9.0f);
+            // Y-axis Rotation 
+            /*
+            if (_controller.Orientation.y < -0.2 && (_controller.Orientation.x > -0.5 && _controller.Orientation.x < 0.3)) // _controller.TriggerValue > 0.2) 
+            {//
                 transform.Rotate(0.0f, 0.0f, 2.8125f);
-            }*/
-
-            if (_controller.Orientation.y > 0.2 && (_controller.Orientation.x > -0.5 && _controller.Orientation.x < 0.1) && _controller.TriggerValue>0.2)
-            {
-  //              transform.Rotate(0.0f, 0.0f, -_controller.Orientation.y * 9.0f);
-                transform.Rotate(0.0f, 0.0f, -2.8125f);
             }
+
+
+            if (_controller.Orientation.y > 0.2 && (_controller.Orientation.x > -0.5 && _controller.Orientation.x < 0.3)) //&& _controller.TriggerValue>0.2)
+            {
+                transform.Rotate(0.0f, 0.0f, -2.8125f);
+            }*/
 
             // Orientacao controle
             /*if (_controller.Orientation.x > 0.08) //sobe
@@ -116,11 +116,11 @@ public class ShipInput : MonoBehaviour
             if (_controller.Orientation.x < 0.08) //desce
             {
                 transform.Rotate(-_controller.Orientation.x * 0.5f, 0.0f, 0.0f);
-            }*/
-
+            }
 
             //yaw = _controller.Orientation.y;  //rotacao lateral
             //pitch = _controller.Orientation.z;
+            */
         }
     }
 

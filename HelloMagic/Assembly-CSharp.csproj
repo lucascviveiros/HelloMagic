@@ -262,6 +262,7 @@
     <Compile Include="Assets\Scripts\AcaoBotao.cs" />
     <Compile Include="Assets\Scripts\Bala.cs" />
     <Compile Include="Assets\Scripts\Cena2Controller.cs" />
+    <Compile Include="Assets\Scripts\DragObjectController.cs" />
     <Compile Include="Assets\Scripts\EndProFinal.cs" />
     <Compile Include="Assets\Scripts\EndTimeLineCena1.cs" />
     <Compile Include="Assets\Scripts\Explosion.cs" />

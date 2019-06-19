@@ -15,11 +15,11 @@ public class Bala : MonoBehaviour {
 			StartCoroutine("Kill");
 		}
 
-		//if (collision.gameObject.name == "Monster" || collision.gameObject.name == "human_warship")
-	//{
+		if (collision.gameObject.name == "Monster" || collision.gameObject.name == "human_warship" || collision.gameObject.name == "EARTH" || collision.gameObject.name == "SUN" || collision.gameObject.name == "VENUS" || collision.gameObject.name == "DeathStar")
+        {
 			enemy = collision.gameObject;
 			StartCoroutine("Explosion");
-		//}
+        }
 	}
 
 	IEnumerator Kill()

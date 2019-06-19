@@ -44,22 +44,7 @@ public class MyControl : MonoBehaviour
             // persistentBehavior.UpdateBinding();
 
         }
-
-        //float fval = _controller.TriggerValue;
-        //spaceship.GoSpaceship(fval);
-        //myText.text = _controller.TouchpadGesture.Direction.ToString(); 
-     
-
-        //Clockwise Counterclockwise
-
-        if (_controller.TouchpadGesture.Direction.ToString() == "Clockwise") {
-            spaceship.TurnRight();
-        }
-
-        if (_controller.TouchpadGesture.Direction.ToString() == "CounterClockwise")
-        {
-            spaceship.TurnRight();
-        }
+      
     }
 
 }

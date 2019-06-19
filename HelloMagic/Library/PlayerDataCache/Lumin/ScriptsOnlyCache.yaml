@@ -1,25 +1,29 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - GestureController
+    - DragObjectController
     - HeadLockControl
+    - MagicLeap.ContentDragHandler
+    - MagicLeap.ControllerStatsText
+    - MagicLeap.ControllerStatusIndicator
+    - MagicLeap.ControllerStatusText
     - MagicLeap.ControllerTransform
     - MagicLeap.ControllerVisualizer
     - MagicLeap.PlaceFromCamera
     - MagicLeap.VideoError
-    - ObjectRaycast
     - PlaneRecognition
     - UnityEngine.XR.MagicLeap.ControllerConnectionHandler
     - UnityEngine.XR.MagicLeap.HeadposeCanvas
+    - UnityEngine.XR.MagicLeap.MLPersistentBehavior
     - UnityEngine.XR.MagicLeap.MagicLeapSceneOptimizer
     - UnityEngine.XR.MagicLeap.PrivilegeDeniedError
     LuminMediaPlayer.dll:
     - UnityEngine.XR.MagicLeap.MLMediaPlayer
+    UnityEditor.TestRunner.dll:
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.SpatialTracking.dll:
     - UnityEngine.SpatialTracking.TrackedPoseDriver
     UnityEngine.UI.dll:
-    - UnityEngine.EventSystems.EventSystem
-    - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Text
@@ -27,7 +31,7 @@ ScriptsOnlyBuild:
     - UnityEngine.XR.MagicLeap.MLSpatialMapper
     - UnityEngine.XR.MagicLeap.Rendering.MagicLeapCamera
   sceneClasses:
-    Assets/Scenes/The PortaL.unity:
+    Assets/Scenes/Placement Scene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -46,19 +50,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 54
-      Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 89
       Script: {instanceID: 0}
     - Class: 102
       Script: {instanceID: 0}
@@ -69,13 +65,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9432}
     - Class: 114
-      Script: {instanceID: 9656}
-    - Class: 114
-      Script: {instanceID: 9662}
-    - Class: 114
-      Script: {instanceID: 9668}
-    - Class: 114
-      Script: {instanceID: 9712}
+      Script: {instanceID: 9626}
     - Class: 114
       Script: {instanceID: 9714}
     - Class: 114
@@ -83,17 +73,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9808}
     - Class: 114
+      Script: {instanceID: 9870}
+    - Class: 114
       Script: {instanceID: 9962}
     - Class: 114
       Script: {instanceID: 10110}
     - Class: 114
       Script: {instanceID: 10188}
     - Class: 114
+      Script: {instanceID: 10344}
+    - Class: 114
       Script: {instanceID: 10552}
-    - Class: 114
-      Script: {instanceID: 10738}
-    - Class: 114
-      Script: {instanceID: 10804}
     - Class: 114
       Script: {instanceID: 10826}
     - Class: 114
@@ -107,11 +97,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11182}
     - Class: 114
+      Script: {instanceID: 11366}
+    - Class: 114
       Script: {instanceID: 11468}
     - Class: 114
       Script: {instanceID: 11568}
     - Class: 114
+      Script: {instanceID: 11764}
+    - Class: 114
       Script: {instanceID: 11766}
+    - Class: 114
+      Script: {instanceID: 140438}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -120,13 +116,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
-      Script: {instanceID: 0}
-    - Class: 258
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -2571,7 +2569,13 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: MagicLeap
     className: DeepSeaExplorerLauncher
+  - hash:
+      serializedVersion: 2
+      Hash: 4607dd39cb7d1c249f85bbe2ad07e344
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DragObjectController
   platform: 39
   scenePathNames:
-  - Assets/Scenes/The PortaL.unity
+  - Assets/Scenes/Placement Scene.unity
   playerPath: /Users/samhoud/Desktop/testewifi2.mpk

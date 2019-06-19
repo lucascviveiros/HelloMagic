@@ -35,8 +35,6 @@ public class PlaneController : MonoBehaviour {
 			speed--;
 		}
 
-	
-
 		transform.Rotate(-Input.GetAxis("Vertical"), 180.0f, -Input.GetAxis("Horizontal"));
 	}
 

@@ -15,12 +15,11 @@ public class Bala : MonoBehaviour {
 			StartCoroutine("Kill");
 		}
 
-		if (collision.gameObject.name == "Monster" || collision.gameObject.name == "human_warship")
-		{
+		//if (collision.gameObject.name == "Monster" || collision.gameObject.name == "human_warship")
+	//{
 			enemy = collision.gameObject;
 			StartCoroutine("Explosion");
-
-		}
+		//}
 	}
 
 	IEnumerator Kill()
@@ -28,15 +27,12 @@ public class Bala : MonoBehaviour {
 		Instantiate(ExplosionPrefab, enemy.transform.position, enemy.transform.rotation);
 		enemy.SetActive (false);
 		yield return new WaitForSeconds(1.0f);
-
-		//SceneManager.LoadScene ("Pre-Final");
 	}
 
 	IEnumerator Explosion()
 	{
-
 		Instantiate(ExplosionPrefab, enemy.transform.position, enemy.transform.rotation);
-		enemy.SetActive(false);
+		//enemy.SetActive(false);
 		yield return new WaitForSeconds(1.0f);
 	}
 

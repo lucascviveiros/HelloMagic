@@ -47,18 +47,7 @@ public class TouchpadGestures : MonoBehaviour
         stateText.text = "State: " + gestureState;
         directionText.text = "Direction: " + gestureDirection;
 
-        if (gestureDirection == "up" || gestureDirection == "Up" || gestureType == "Tap") 
-        {
-        } 
-
-        if(gestureDirection == "down") 
-        {
-            spaceship.BackSpaceship();
-        }
     }
-
-    //state: start, continue, end
-    //direction: up, down, left, right
 
     void updateTransform()
     {

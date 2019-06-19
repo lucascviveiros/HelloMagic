@@ -730,7 +730,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* String_Compare_mA1D43767F882FE677F238637A87
 IL2CPP_EXTERN_C const RuntimeMethod* String_ConcatArray_m7F589A262DDCADFE5A6ED74EB911B8FBC54BA148_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* String_Concat_m232E857CA5107EA6AC52E7DD7018716C021F237B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* String_Concat_m2E1F71C491D2429CC80A28745488FEA947BB7AAC_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* String_Concat_m798542DE19B3F02DC4F4B777BB2E73169F129DE1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* String_Concat_mB78D0094592718DA6D5DB6C712A9C225631666BE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* String_Concat_mB7BA84F13912303B2E5E40FBF0109E1A328ACA07_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* String_Concat_mBB19C73816BDD1C3519F248E1ADC8E11A6FDB495_RuntimeMethod_var;
@@ -1126,7 +1125,6 @@ IL2CPP_EXTERN_C const uint32_t String_Compare_mA1D43767F882FE677F238637A8785FCCE
 IL2CPP_EXTERN_C const uint32_t String_ConcatArray_m7F589A262DDCADFE5A6ED74EB911B8FBC54BA148_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t String_Concat_m232E857CA5107EA6AC52E7DD7018716C021F237B_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t String_Concat_m2E1F71C491D2429CC80A28745488FEA947BB7AAC_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t String_Concat_m798542DE19B3F02DC4F4B777BB2E73169F129DE1_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t String_Concat_mB78D0094592718DA6D5DB6C712A9C225631666BE_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t String_Concat_mB7BA84F13912303B2E5E40FBF0109E1A328ACA07_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t String_Concat_mBB19C73816BDD1C3519F248E1ADC8E11A6FDB495_MetadataUsageId;
@@ -18880,36 +18878,6 @@ IL_000e:
 		V_3 = (Il2CppChar*)(((uintptr_t)0));
 		V_1 = (Il2CppChar*)(((uintptr_t)0));
 		return L_6;
-	}
-}
-// System.String System.String::Concat(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m798542DE19B3F02DC4F4B777BB2E73169F129DE1 (RuntimeObject * ___arg00, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (String_Concat_m798542DE19B3F02DC4F4B777BB2E73169F129DE1_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	StackTraceSentry _stackTraceSentry(String_Concat_m798542DE19B3F02DC4F4B777BB2E73169F129DE1_RuntimeMethod_var);
-	{
-		RuntimeObject * L_0 = ___arg00;
-		if (L_0)
-		{
-			goto IL_0009;
-		}
-	}
-	{
-		String_t* L_1 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->get_Empty_5();
-		return L_1;
-	}
-
-IL_0009:
-	{
-		RuntimeObject * L_2 = ___arg00;
-		NullCheck(L_2);
-		String_t* L_3 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_2);
-		return L_3;
 	}
 }
 // System.String System.String::Concat(System.Object,System.Object)

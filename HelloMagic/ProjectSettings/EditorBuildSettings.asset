@@ -8,13 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Monalisa.unity
     guid: ec35a3e77e51d4241a0fdba679257601
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/The PortaL.unity
     guid: 74f814fa4188f406c83a8465dbc091d3
   - enabled: 0
     path: Assets/Scenes/Intro.unity
     guid: 18a6c7bac6d0e4cd787306909b35ac52
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SpaceshipControl.unity
     guid: 5a290e225208d436297e80fe3ca79d2c
   m_configObjects: {}

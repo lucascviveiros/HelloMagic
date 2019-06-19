@@ -12,16 +12,17 @@ public class ShipInput : MonoBehaviour
 
 	[Space]
 
-    [Range(-1, 1)]
+    [Range(-0.5f, 0.5f)]
     public float pitch;
-    [Range(-1, 1)]
+    [Range(-0.5f, 0.5f)]
     public float yaw;
-    [Range(-1, 1)]
+    [Range(-0.5f, 0.5f)]
     public float roll;
     [Range(-1, 1)]
     public float strafe;
     [Range(0, 1)]
     public float throttle;
+
 
     // How quickly the throttle reacts to input.
     private const float THROTTLE_SPEED = 0.5f;
@@ -33,8 +34,8 @@ public class ShipInput : MonoBehaviour
     private MLInputController _controller;
     public Text myOrientation;
     public Text myTrigger;
-    bool flag = false;
-
+    public float sideSpeed = 5.0f;
+    private int count = 0;
 
     private void Awake()
     {
@@ -44,55 +45,85 @@ public class ShipInput : MonoBehaviour
         _controller = MLInput.GetController(MLInput.Hand.Left);
     }
 
-    private void FixedUpdate()
+    private void TurnRightLeft(float speed) 
     {
-        if (useMouseInput)
-        {
-            strafe = Input.GetAxis("Horizontal");
-            SetStickCommandsUsingMouse();
-            UpdateMouseWheelThrottle();
-            UpdateKeyboardThrottle(KeyCode.W, KeyCode.S);
-        }
-
-        if (_controller.Connected)
-        {
-            myOrientation.text = "" + _controller.Orientation;
-            myTrigger.text = "pitch: " + _controller.TouchpadGesture.Direction.ToString();
-
-            float acelera = _controller.TriggerValue; //0 a 1
-            Update6DOFThrottle(acelera);
-
-            //pitch = _controller.Orientation.
-            //Vector3 contro = _controller.Orientation.z;
-
-            // pitch = _controller.TouchpadGesture.Speed;
-
-
-            //            yaw = _controller.Orientation.z; //rotacao esq direita
-
-        
-            pitch = _controller.Orientation.y;
-            yaw = _controller.Orientation.z;
-
-        }
-
-
-
-        else
-        {                
-           pitch = Input.GetAxis("Vertical");
-           yaw = Input.GetAxis("Horizontal");
-
-           if (addRoll)
-               roll = -Input.GetAxis("Horizontal") * 0.5f;
-
-           strafe = 0.0f;
-           UpdateKeyboardThrottle(KeyCode.R, KeyCode.F);
-        }
+        transform.Rotate(0.0f, speed, 0.0f);
 
     }
 
-    /// Freelancer style mouse controls. This uses the mouse to simulate a virtual joystick.
+    private void Update()
+    {
+        if (_controller.Connected)
+        {
+           // myTrigger.text = ">" + _controller.TouchpadGesture..ToString() + "\n Gesture 2: " + _controller.Touch1PosAndForce.y.ToString();
+            myTrigger.text = "Y!:" + _controller.Orientation.y.ToString()+ "\n" + "X!:" + _controller.Orientation.x.ToString() + "Z!:" + _controller.Orientation.z.ToString();
+
+            //Aceleracao 
+            float acelera = _controller.TriggerValue; //0 a 1
+            Update6DOFThrottle(acelera);
+
+
+            //TurnRight
+            if ((_controller.TouchpadGesture.Type.ToString() == "Swipe" || _controller.TouchpadGesture.Type.ToString() == "Tap")
+                    && _controller.Touch1PosAndForce.x > 0.1 && _controller.Touch1PosAndForce.z > 0 && _controller.TouchpadGesture.Direction.ToString() == "Right")
+            {
+                TurnRightLeft(sideSpeed);
+            }
+
+            //TurnLeft
+            else if ((_controller.TouchpadGesture.Type.ToString() == "Swipe" || _controller.TouchpadGesture.Type.ToString() == "Tap")
+                    &&_controller.Touch1PosAndForce.x < -0.1 && _controller.Touch1PosAndForce.z > 0 && _controller.TouchpadGesture.Direction.ToString() == "Left")
+            {
+                TurnRightLeft(-sideSpeed);
+            }
+
+            //UP
+            else if (_controller.Touch1PosAndForce.y > 0.1 && _controller.Touch1PosAndForce.z > 0
+                        && (_controller.Touch1PosAndForce.x > -0.3 && _controller.Touch1PosAndForce.x < 0.3)
+                            && _controller.TouchpadGesture.Type.ToString() == "ForceTapUp")// && _controller.TouchpadGesture.Direction.ToString() == "Up") 
+            {
+                transform.Rotate(5.625f, 0.0f, 0.0f);
+            }
+
+            //DOWN
+            else if (_controller.Touch1PosAndForce.y < -0.1 && _controller.Touch1PosAndForce.z > 0
+                        && (_controller.Touch1PosAndForce.x > -0.3 && _controller.Touch1PosAndForce.x < 0.3)
+                            && _controller.TouchpadGesture.Type.ToString() == "ForceTapDown")// && _controller.TouchpadGesture.Direction.ToString() == "Down")
+            {
+                transform.Rotate(-5.625f, 0.0f, 0.0f);
+            }
+
+            // Orientacao Y
+           /* if (_controller.Orientation.y < -0.2 && (_controller.Orientation.x > -0.5 && _controller.Orientation.x < 0.1) && _controller.TriggerValue > 0.2) 
+            {
+//                transform.Rotate(0.0f, 0.0f, -_controller.Orientation.y * 9.0f);
+                transform.Rotate(0.0f, 0.0f, 2.8125f);
+            }*/
+
+            if (_controller.Orientation.y > 0.2 && (_controller.Orientation.x > -0.5 && _controller.Orientation.x < 0.1) && _controller.TriggerValue>0.2)
+            {
+  //              transform.Rotate(0.0f, 0.0f, -_controller.Orientation.y * 9.0f);
+                transform.Rotate(0.0f, 0.0f, -2.8125f);
+            }
+
+            // Orientacao controle
+            /*if (_controller.Orientation.x > 0.08) //sobe
+            {
+                transform.Rotate(-_controller.Orientation.x * 0.5f, 0.0f, 0.0f);
+
+            }
+
+            if (_controller.Orientation.x < 0.08) //desce
+            {
+                transform.Rotate(-_controller.Orientation.x * 0.5f, 0.0f, 0.0f);
+            }*/
+
+
+            //yaw = _controller.Orientation.y;  //rotacao lateral
+            //pitch = _controller.Orientation.z;
+        }
+    }
+
     /// When the mouse is in the center of the screen, this is the same as a centered stick.
     private void SetStickCommandsUsingMouse()
     {
@@ -110,10 +141,8 @@ public class ShipInput : MonoBehaviour
 
     private void SetStickCommandsUsing6DOF(float my6DOFOrientation) 
     {
-
         yaw = (my6DOFOrientation - (Screen.width * 0.5f)) / (Screen.width * 0.5f);
         yaw = Mathf.Clamp(yaw, -1.0f, 1.0f);
-
     }
 
     /// Uses R and F to raise and lower the throttle.
@@ -141,11 +170,8 @@ public class ShipInput : MonoBehaviour
     {
         float target = throttle;
 
-      //  if (acelera < 0.8) 
-      //  { 
             throttle = Mathf.Clamp(acelera, 0.0f, 1.0f);
             throttle = Mathf.MoveTowards(throttle, target, Time.deltaTime * THROTTLE_SPEED);
 
-      //  }
     }
 }

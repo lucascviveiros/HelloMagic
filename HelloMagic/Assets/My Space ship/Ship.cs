@@ -37,7 +37,9 @@ public class Ship : MonoBehaviour
     private void Update()
     {
         // Pass the input to the physics to move the ship.
-        physics.SetPhysicsInput(new Vector3(input.strafe, 0.0f, input.throttle), new Vector3(input.pitch, input.yaw, input.roll));
+        //physics.SetPhysicsInput(new Vector3(input.strafe, 0.0f, input.throttle), new Vector3(input.pitch, input.yaw, input.roll));
+        physics.SetPhysicsInput(new Vector3(input.strafe, 0.0f, input.throttle), new Vector3(input.pitch, input.yaw, 0.0f));
+
 
         // If this is the player ship, then set the static reference. If more than one ship
         // is set to player, then whatever happens to be the last ship to be updated will be

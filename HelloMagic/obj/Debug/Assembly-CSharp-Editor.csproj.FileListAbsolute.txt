@@ -800,3 +800,5 @@
 /Users/samhoud/Desktop/HelloMagic/HelloMagic/obj/Debug/Assembly-CSharp-Editor.csproj.CopyComplete
 /Users/samhoud/Desktop/HelloMagic/HelloMagic/obj/Debug/Assembly-CSharp-Editor.dll
 /Users/samhoud/Desktop/HelloMagic/HelloMagic/obj/Debug/Assembly-CSharp-Editor.pdb
+/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/bin/Debug/Assembly-CSharp-firstpass.pdb
+/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/bin/Debug/Assembly-CSharp-Editor-firstpass.pdb

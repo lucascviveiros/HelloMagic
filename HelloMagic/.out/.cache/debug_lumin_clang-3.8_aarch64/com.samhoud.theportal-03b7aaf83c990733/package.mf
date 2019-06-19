@@ -2,16 +2,16 @@
  "entries": [
   {
    "compression": 8,
-   "hash": "5f305488c5b2bc4db0d49cca9995d7b0af4b4690",
+   "hash": "e13da1f98e954e347686b8b8cf773fb8df518ce8",
    "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
-   "size": 3256004,
+   "size": 3309076,
    "src": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
   },
   {
    "compression": 8,
-   "hash": "86f7aca7f50292ce68dc1ba3dc1368ad8eb0e970",
+   "hash": "a4c0915ffa3724c67c483b557153b93628f1ba08",
    "pkgpath": "bin/libil2cpp.so",
-   "size": 48737296,
+   "size": 49620616,
    "src": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/Native/libil2cpp.so",
    "xfrm_flags": {
     "signed": {
@@ -23,9 +23,9 @@
      "version": 3
     }
    },
-   "xfrm_hash": "7b8c951380730fafeba37a97dc80fc39aa69ced8",
+   "xfrm_hash": "70a832ff236dc37e02bfa84055a56f5731e76fa2",
    "xfrm_path": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/.out/.cache/debug_lumin_clang-3.8_aarch64/com.samhoud.theportal-03b7aaf83c990733/libil2cpp.so-a191a587d7338062",
-   "xfrm_size": 48738054
+   "xfrm_size": 49621374
   },
   {
    "compression": 8,
@@ -158,21 +158,21 @@
   },
   {
    "compression": 8,
-   "hash": "537d5c7dc075d067558ec72d6c25a7bcfe3f7dc2",
+   "hash": "b8f9f704de495e768fdca3ddcbe5779212a1f532",
    "pkgpath": "Data/globalgamemanagers",
-   "size": 49600,
+   "size": 50864,
    "src": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/globalgamemanagers"
   },
   {
    "compression": 8,
-   "hash": "4150be252bbe9a4efc104715356f70c9759b3a1d",
+   "hash": "7be849b36bdfb51094a79bcb39a85eae579ff179",
    "pkgpath": "Data/globalgamemanagers.assets",
-   "size": 79000,
+   "size": 84352,
    "src": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/globalgamemanagers.assets"
   },
   {
    "compression": 8,
-   "hash": "9162b18159aaf127d1f1e9d50a2b1647c891399c",
+   "hash": "8bbb123a473a8163376b46f912819731bd0d0834",
    "pkgpath": "Data/level0",
    "size": 16716,
    "src": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/level0"
@@ -186,7 +186,7 @@
   },
   {
    "compression": 8,
-   "hash": "3d49e156828465ce5f095ec38bfa14726286e4b7",
+   "hash": "6a129563f7e7a75523f810b51cf756b1f15568e9",
    "pkgpath": "Data/resources.assets",
    "size": 522608,
    "src": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/resources.assets"
@@ -200,9 +200,9 @@
   },
   {
    "compression": 8,
-   "hash": "0341504c4a5e1e44fd92223cae62ebc8dfefeb0b",
+   "hash": "2a9c4e160d56e8623189af7fe834b8b1af1411a0",
    "pkgpath": "Data/sharedassets0.assets",
-   "size": 1606180,
+   "size": 1606660,
    "src": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/sharedassets0.assets"
   },
   {

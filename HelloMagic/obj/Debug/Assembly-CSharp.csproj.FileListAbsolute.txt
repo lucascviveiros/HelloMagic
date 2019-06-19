@@ -714,3 +714,4 @@
 /Users/samhoud/Desktop/HelloMagic/HelloMagic/obj/Debug/Assembly-CSharp.csproj.CopyComplete
 /Users/samhoud/Desktop/HelloMagic/HelloMagic/obj/Debug/Assembly-CSharp.dll
 /Users/samhoud/Desktop/HelloMagic/HelloMagic/obj/Debug/Assembly-CSharp.pdb
+/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/bin/Debug/Assembly-CSharp-firstpass.pdb

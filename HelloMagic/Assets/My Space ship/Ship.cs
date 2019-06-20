@@ -24,7 +24,7 @@ public class Ship : MonoBehaviour
     private static Ship playerShip;
 
     // Getters for external objects to reference things like input.
-    public bool UsingMouseInput { get { return input.useMouseInput; } }
+    //public bool UsingMouseInput { get { return input.useMouseInput; } }
     public Vector3 Velocity { get { return physics.Rigidbody.velocity; } }
     public float Throttle { get { return input.throttle; } }
 
@@ -36,15 +36,17 @@ public class Ship : MonoBehaviour
 
     private void Update()
     {
-        // Pass the input to the physics to move the ship.
-        //physics.SetPhysicsInput(new Vector3(input.strafe, 0.0f, input.throttle), new Vector3(input.pitch, input.yaw, input.roll));
-        physics.SetPhysicsInput(new Vector3(input.strafe, 0.0f, input.throttle), new Vector3(input.pitch, input.yaw, 0.0f));
+      
+            // Pass the input to the physics to move the ship.
+            //physics.SetPhysicsInput(new Vector3(input.strafe, 0.0f, input.throttle), new Vector3(input.pitch, input.yaw, input.roll));
+            physics.SetPhysicsInput(new Vector3(input.strafe, 0.0f, input.throttle), new Vector3(input.pitch, input.yaw, 0.0f));
 
 
-        // If this is the player ship, then set the static reference. If more than one ship
-        // is set to player, then whatever happens to be the last ship to be updated will be
-        // considered the player. Don't let this happen.
-        if (isPlayer)
-            playerShip = this;
+            // If this is the player ship, then set the static reference. If more than one ship
+            // is set to player, then whatever happens to be the last ship to be updated will be
+            // considered the player. Don't let this happen.
+            if (isPlayer)
+                playerShip = this;
+        
     }
 }

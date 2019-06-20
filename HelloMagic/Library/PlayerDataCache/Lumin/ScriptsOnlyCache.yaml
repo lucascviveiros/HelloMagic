@@ -1,9 +1,10 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Bala
     - DragObjectController
     - HeadLockControl
-    - MagicLeap.ContentDragHandler
+    - InimigoIA
     - MagicLeap.ControllerStatsText
     - MagicLeap.ControllerStatusIndicator
     - MagicLeap.ControllerStatusText
@@ -12,11 +13,19 @@ ScriptsOnlyBuild:
     - MagicLeap.PlaceFromCamera
     - MagicLeap.VideoError
     - PlaneRecognition
+    - Ship
+    - ShipInput
+    - ShipPhysics
+    - SpinFree
+    - Tiro
     - UnityEngine.XR.MagicLeap.ControllerConnectionHandler
     - UnityEngine.XR.MagicLeap.HeadposeCanvas
-    - UnityEngine.XR.MagicLeap.MLPersistentBehavior
     - UnityEngine.XR.MagicLeap.MagicLeapSceneOptimizer
     - UnityEngine.XR.MagicLeap.PrivilegeDeniedError
+    - UnityStandardAssets.Effects.AfterburnerPhysicsForce
+    - UnityStandardAssets.Effects.ExplosionPhysicsForce
+    - UnityStandardAssets.Effects.ParticleSystemMultiplier
+    - WarpSpeed
     LuminMediaPlayer.dll:
     - UnityEngine.XR.MagicLeap.MLMediaPlayer
     UnityEditor.TestRunner.dll:
@@ -50,11 +59,23 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 96
       Script: {instanceID: 0}
     - Class: 102
       Script: {instanceID: 0}
@@ -62,8 +83,14 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 111
+      Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 9432}
+    - Class: 114
+      Script: {instanceID: 9508}
+    - Class: 114
+      Script: {instanceID: 9528}
     - Class: 114
       Script: {instanceID: 9626}
     - Class: 114
@@ -75,46 +102,70 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9870}
     - Class: 114
+      Script: {instanceID: 9918}
+    - Class: 114
       Script: {instanceID: 9962}
     - Class: 114
-      Script: {instanceID: 10110}
+      Script: {instanceID: 10024}
     - Class: 114
-      Script: {instanceID: 10188}
+      Script: {instanceID: 10112}
     - Class: 114
-      Script: {instanceID: 10344}
+      Script: {instanceID: 10190}
     - Class: 114
-      Script: {instanceID: 10552}
+      Script: {instanceID: 10346}
     - Class: 114
-      Script: {instanceID: 10826}
+      Script: {instanceID: 10482}
     - Class: 114
-      Script: {instanceID: 11102}
+      Script: {instanceID: 10554}
     - Class: 114
-      Script: {instanceID: 11112}
+      Script: {instanceID: 10734}
     - Class: 114
-      Script: {instanceID: 11124}
+      Script: {instanceID: 10828}
     - Class: 114
-      Script: {instanceID: 11144}
+      Script: {instanceID: 10894}
     - Class: 114
-      Script: {instanceID: 11182}
+      Script: {instanceID: 10912}
     - Class: 114
-      Script: {instanceID: 11366}
+      Script: {instanceID: 10938}
     - Class: 114
-      Script: {instanceID: 11468}
+      Script: {instanceID: 11088}
     - Class: 114
-      Script: {instanceID: 11568}
+      Script: {instanceID: 11104}
     - Class: 114
-      Script: {instanceID: 11764}
+      Script: {instanceID: 11114}
     - Class: 114
-      Script: {instanceID: 11766}
+      Script: {instanceID: 11126}
     - Class: 114
-      Script: {instanceID: 140438}
+      Script: {instanceID: 11146}
+    - Class: 114
+      Script: {instanceID: 11184}
+    - Class: 114
+      Script: {instanceID: 11470}
+    - Class: 114
+      Script: {instanceID: 11570}
+    - Class: 114
+      Script: {instanceID: 11644}
+    - Class: 114
+      Script: {instanceID: 11662}
+    - Class: 114
+      Script: {instanceID: 11768}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
@@ -765,7 +816,7 @@ ScriptsOnlyBuild:
     className: SignalAsset
   - hash:
       serializedVersion: 2
-      Hash: 86569455a9c61f709df8ceac66f72825
+      Hash: 6640dcf3506302bbf3ebad46a295d693
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Tiro
@@ -811,6 +862,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: a071cf1170017a476db9858d13884579
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DragObjectController
   - hash:
       serializedVersion: 2
       Hash: 52bcb9c2a78bdd8d98a59e915c346e75
@@ -1689,7 +1746,7 @@ ScriptsOnlyBuild:
     className: VideoCaptureExample
   - hash:
       serializedVersion: 2
-      Hash: ec9b28b98d9ad00d47cbdf262ca45fb9
+      Hash: 05155a3478d7ffe10f933b9c32edf20a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ShipPhysics
@@ -1815,7 +1872,7 @@ ScriptsOnlyBuild:
     className: ARCoreSessionConfig
   - hash:
       serializedVersion: 2
-      Hash: 1c273f98c2ec8b633252dabb5e40e006
+      Hash: fecc36482d74c74f03cd9e5dcd710c89
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ShipInput
@@ -2569,12 +2626,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: MagicLeap
     className: DeepSeaExplorerLauncher
-  - hash:
-      serializedVersion: 2
-      Hash: 4607dd39cb7d1c249f85bbe2ad07e344
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DragObjectController
   platform: 39
   scenePathNames:
   - Assets/Scenes/Placement Scene.unity

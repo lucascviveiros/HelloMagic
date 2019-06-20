@@ -6,11 +6,14 @@ using UnityEngine.UI;
 
 public class DragObjectController : MonoBehaviour
 {
-    private const float _distance = 1.0f;
+    private const float _distance = 1.1f;
     private MLInputController _controller;
-    public GameObject _myObject, _camera;
-    private bool myFlag;
-    public Text myTextFlag; 
+    public GameObject _myUniverse, _camera;
+    private bool myFlag, _instantiated;
+    public Text myTextFlag;
+    public ShipInput myShip;
+    public GameObject myQuad;
+    public GameObject myShipPrefab;
 
     private void Awake()
     {
@@ -19,23 +22,48 @@ public class DragObjectController : MonoBehaviour
         MLInput.OnControllerButtonDown += OnButtonDown;
     }
 
-    // Start is called before the first frame update
     void Start()
     {  
         _camera = GameObject.Find("Main Camera");
-        _myObject = GameObject.Find("Cube");
+        _myUniverse = GameObject.Find("Universe");
+        myQuad = GameObject.Find("Quad");
+        myTextFlag.text = "bool: false";
+        Time.timeScale = 0;
         myFlag = false;
-        myTextFlag.text = "Nenhum clique do hone button - flag: false"; 
+        _instantiated = false;
+        _myUniverse.GetComponent<Collider>();
+
     }
 
-    // Update is called once per frame
     public void Update()
     {
-        if (_controller.TriggerValue > 0.2)
+        if (myFlag == false)
         {
-            _myObject.transform.position = _controller.Position + _camera.transform.forward * _distance;
-            _myObject.transform.rotation = _camera.transform.rotation;
+            _myUniverse.GetComponent<Collider>().enabled = true;
+
+           // if (_controller.TriggerValue > 0.2)
+            //{
+            _myUniverse.transform.position = _controller.Position + _camera.transform.forward * _distance;
+                _myUniverse.transform.rotation = _camera.transform.rotation;
+            //}
+            Time.timeScale = 0;
+            myQuad.SetActive(true);
         }
+        else if (myFlag == true) 
+        {
+            _myUniverse.GetComponent<Collider>().enabled = false;
+
+            if (_instantiated == false)
+            {
+                GameObject myShip = Instantiate(myShipPrefab, _controller.Position + _camera.transform.forward * _distance, Quaternion.identity);
+                _instantiated = true;
+            }
+            myQuad.SetActive(false);
+            Time.timeScale = 1;
+
+        }
+
+
     }
 
     void OnButtonDown(byte controller_id, MLInputControllerButton button)
@@ -43,7 +71,8 @@ public class DragObjectController : MonoBehaviour
         if ((button == MLInputControllerButton.HomeTap))
         {
             myFlag = !myFlag;
-            myTextFlag.text = "bool: " + myFlag.ToString();
+            myTextFlag.text = "Game: " + myFlag.ToString();
+            myShip.placeUniverse();
         }
     }
 

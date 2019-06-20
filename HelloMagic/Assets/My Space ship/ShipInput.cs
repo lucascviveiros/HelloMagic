@@ -5,10 +5,10 @@ using UnityEngine.XR.MagicLeap;
 /// Class specifically to deal with input.
 public class ShipInput : MonoBehaviour
 {
-    [Tooltip("When true, the mouse and mousewheel are used for ship input and A/D can be used for strafing like in many arcade space sims.\n\nOtherwise, WASD/Arrows/Joystick + R/T are used for flying, representing a more traditional style space sim.")]
-    public bool useMouseInput = true;
-    [Tooltip("When using Keyboard/Joystick input, should roll be added to horizontal stick movement. This is a common trick in traditional space sims to help ships roll into turns and gives a more plane-like feeling of flight.")]
-    public bool addRoll = true;
+    //[Tooltip("When true, the mouse and mousewheel are used for ship input and A/D can be used for strafing like in many arcade space sims.\n\nOtherwise, WASD/Arrows/Joystick + R/T are used for flying, representing a more traditional style space sim.")]
+    //public bool useMouseInput = false;
+    //[Tooltip("When using Keyboard/Joystick input, should roll be added to horizontal stick movement. This is a common trick in traditional space sims to help ships roll into turns and gives a more plane-like feeling of flight.")]
+    //public bool addRoll = true;
 
 	[Space]
 
@@ -23,42 +23,28 @@ public class ShipInput : MonoBehaviour
     [Range(0, 1)]
     public float throttle;
 
-
-    // How quickly the throttle reacts to input.
     private const float THROTTLE_SPEED = 0.5f;
-
-    // Keep a reference to the ship this is attached to just in case.
     private Ship ship;
 
     //Magic Leap Controller
     private MLInputController _controller;
-    public Text myOrientation;
-    public Text myTrigger;
     public float sideSpeed = 5.0f;
-    private int count = 0;
+    public bool setUniverse;
 
     private void Awake()
     {
         ship = GetComponent<Ship>();
-        //Control Set up
         MLInput.Start();
         _controller = MLInput.GetController(MLInput.Hand.Left);
+        setUniverse = false;
     }
 
-    private void TurnRightLeft(float speed) 
+    public void Update()
     {
-        transform.Rotate(0.0f, speed, 0.0f);
-
-    }
-
-    private void Update()
-    {
-        if (_controller.Connected)
-        {
-            myTrigger.text = "Y: " + _controller.Orientation.y.ToString()+ "\n" + "X: " + _controller.Orientation.x.ToString() + "\n" + "Z: " + _controller.Orientation.z.ToString();
+            //myTrigger.text = "Y: " + _controller.Orientation.y.ToString()+ "\n" + "X: " + _controller.Orientation.x.ToString() + "\n" + "Z: " + _controller.Orientation.z.ToString();
 
             //Aceleracao 
-            float acelera = _controller.TriggerValue; //0 a 1
+            float acelera = _controller.TriggerValue; 
             Update6DOFThrottle(acelera);
 
             //TurnRight
@@ -107,21 +93,32 @@ public class ShipInput : MonoBehaviour
             }*/
 
             // Orientacao controle
-            /*if (_controller.Orientation.x > 0.08) //sobe
+            if (_controller.Orientation.x > 0.08) //sobe
             {
-                transform.Rotate(-_controller.Orientation.x * 0.5f, 0.0f, 0.0f);
+                transform.Rotate(-_controller.Orientation.x * 4f, 0.0f, 0.0f);
 
             }
 
             if (_controller.Orientation.x < 0.08) //desce
             {
-                transform.Rotate(-_controller.Orientation.x * 0.5f, 0.0f, 0.0f);
+                transform.Rotate(-_controller.Orientation.x * 4f, 0.0f, 0.0f);
             }
+        
+    }
 
-            //yaw = _controller.Orientation.y;  //rotacao lateral
-            //pitch = _controller.Orientation.z;
-            */
-        }
+    private void TurnRightLeft(float speed)
+    {
+        transform.Rotate(0.0f, speed, 0.0f);
+    }
+
+    public void placeUniverse() 
+    {
+        setUniverse = !setUniverse; 
+    }
+
+    public bool getPlaceUniverse() 
+    {
+        return setUniverse;
     }
 
     /// When the mouse is in the center of the screen, this is the same as a centered stick.
@@ -158,20 +155,19 @@ public class ShipInput : MonoBehaviour
         throttle = Mathf.MoveTowards(throttle, target, Time.deltaTime * THROTTLE_SPEED);
     }
 
-    /// Uses the mouse wheel to control the throttle.
     private void UpdateMouseWheelThrottle()
     {
         throttle += Input.GetAxis("Mouse ScrollWheel");
         throttle = Mathf.Clamp(throttle, 0.0f, 1.0f);
-
     }
 
     private void Update6DOFThrottle(float acelera)
     {
         float target = throttle;
+        throttle = Mathf.Clamp(acelera, 0.0f, 1.0f);
+        throttle = Mathf.MoveTowards(throttle, target, Time.deltaTime * THROTTLE_SPEED);
 
-            throttle = Mathf.Clamp(acelera, 0.0f, 1.0f);
-            throttle = Mathf.MoveTowards(throttle, target, Time.deltaTime * THROTTLE_SPEED);
-
+        //AudioSource som = GetComponent<AudioSource>();
+        //som.Play();
     }
 }

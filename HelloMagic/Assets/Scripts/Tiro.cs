@@ -8,12 +8,12 @@ public class Tiro : MonoBehaviour {
 	public GameObject bulletPrefab;
 	public GameObject bulletSpawn;
     private MLInputController _controller;
+    public ShipInput myShip;
 
     private void Awake()
     {
         MLInput.Start();
         _controller = MLInput.GetController(MLInput.Hand.Left);
-
     }
 
     void Update () 

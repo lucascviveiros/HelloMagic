@@ -1,19 +1,11 @@
 ﻿<Properties StartupConfiguration="{A7EFE92A-6E43-0ED6-648B-CD35BBB20F36}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MagicLeap/Examples/Scripts/Common/FaceCamera.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Tiro.cs">
     <Files>
-      <File FileName="Assets/My Space ship/ShipInput.cs" Line="107" Column="16" />
-      <File FileName="Assets/My Space ship/ShipPhysics.cs" Line="21" Column="54" />
-      <File FileName="Assets/Scripts/Tiro.cs" Line="25" Column="3" />
-      <File FileName="Assets/Scripts/InimigoIA.cs" Line="18" Column="23" />
-      <File FileName="Assets/MagicLeap/Examples/Scripts/Visualizers/ContentDragHandler.cs" Line="57" Column="14" />
-      <File FileName="Assets/Scripts/TouchpadGestures.cs" Line="54" Column="41" />
-      <File FileName="Assets/Scripts/Bala.cs" Line="23" Column="3" />
-      <File FileName="Assets/MyControl.cs" Line="25" Column="6" />
-      <File FileName="Assets/Scripts/DragObjectController.cs" Line="34" Column="44" />
-      <File FileName="Assets/GestureController.cs" Line="29" Column="6" />
-      <File FileName="Assets/MagicLeap/Examples/Scripts/ControllerFeedbackExample.cs" Line="49" Column="10" />
-      <File FileName="Assets/PlaneRecognition.cs" Line="53" Column="6" />
-      <File FileName="Assets/MagicLeap/Examples/Scripts/Common/FaceCamera.cs" Line="36" Column="10" />
+      <File FileName="Assets/My Space ship/ShipInput.cs" Line="177" Column="2" />
+      <File FileName="Assets/My Space ship/ShipPhysics.cs" Line="51" Column="6" />
+      <File FileName="Assets/Scripts/Tiro.cs" Line="23" Column="11" />
+      <File FileName="Assets/Scripts/DragObjectController.cs" Line="21" Column="18" />
+      <File FileName="Assets/My Space ship/Ship.cs" Line="35" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

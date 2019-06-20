@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 23623785605084500}
   - component: {fileID: 54156833438219048}
   - component: {fileID: 7014723579450889141}
-  - component: {fileID: 1000342581246184100}
+  - component: {fileID: 8359042437852168364}
   m_Layer: 0
   m_Name: Laser
   m_TagString: Untagged
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ExplosionPrefab: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
---- !u!82 &1000342581246184100
+--- !u!82 &8359042437852168364
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,9 +134,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8b7bc7fe221dc124b91bc28b88e3cffb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 49d9d6249194a4612a1674d363cb9fa3, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.707
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -210,7 +210,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 1.1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

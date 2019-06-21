@@ -271,6 +271,7 @@
     <Compile Include="Assets\Scripts\InimigoIA.cs" />
     <Compile Include="Assets\Scripts\ObjectRaycast.cs" />
     <Compile Include="Assets\Scripts\PlaneController.cs" />
+    <Compile Include="Assets\Scripts\PlanetsController.cs" />
     <Compile Include="Assets\Scripts\TieController.cs" />
     <Compile Include="Assets\Scripts\Tiro.cs" />
     <Compile Include="Assets\Scripts\TouchpadGestures.cs" />

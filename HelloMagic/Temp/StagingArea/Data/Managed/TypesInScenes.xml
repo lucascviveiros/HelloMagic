@@ -71,6 +71,7 @@
 		<type fullname="MagicLeap.PlaceFromCamera" preserve="nothing"/>
 		<type fullname="MagicLeap.VideoError" preserve="nothing"/>
 		<type fullname="PlaneRecognition" preserve="nothing"/>
+		<type fullname="PlanetsController" preserve="nothing"/>
 		<type fullname="Ship" preserve="nothing"/>
 		<type fullname="ShipInput" preserve="nothing"/>
 		<type fullname="ShipPhysics" preserve="nothing"/>

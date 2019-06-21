@@ -20,6 +20,7 @@ mabu: not repackaging unmodified file '/Users/samhoud/Desktop/HelloMagic/HelloMa
 mabu: not repackaging unmodified file '/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/sharedassets0.assets'
 mabu: not repackaging unmodified file '/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/sharedassets0.assets.resS'
 mabu: not repackaging unmodified file '/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/sharedassets0.resource'
+mabu: not repackaging unmodified file '/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat'
 mabu: not repackaging unmodified file '/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/Plugins/AudioPluginMSASpatializer.so'
 mabu: not repackaging unmodified file '/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/Plugins/UnityEngine.TestRunner.dll'
 mabu: not repackaging unmodified file '/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/Plugins/UnityMagicLeap.so'
@@ -36,7 +37,6 @@ mabu: setting tail data: /Users/samhoud/MagicLeap/mlsdk/v0.21.0/tools/python3/bi
 mabu: applied tail data to '/Users/samhoud/Desktop/HelloMagic/HelloMagic/.out/.cache/debug_lumin_clang-3.8_aarch64/com.samhoud.placement-03b7aaf83c990733/libil2cpp.so-a191a587d7338062'
 mabu: running signer tool: /Users/samhoud/MagicLeap/mlsdk/v0.21.0/tools/signer/sign-file sha512 /Users/samhoud/Downloads/privatekey/hellomagicleap.privkey /Users/samhoud/Downloads/privatekey/hellomagicleap.cert /Users/samhoud/Desktop/HelloMagic/HelloMagic/.out/.cache/debug_lumin_clang-3.8_aarch64/com.samhoud.placement-03b7aaf83c990733/libil2cpp.so-a191a587d7338062
 mabu: signed '/Users/samhoud/Desktop/HelloMagic/HelloMagic/.out/.cache/debug_lumin_clang-3.8_aarch64/com.samhoud.placement-03b7aaf83c990733/libil2cpp.so-a191a587d7338062'
-mabu: updating package entry 'Data/Managed/Metadata/global-metadata.dat'
 mabu: updating package entry 'Data/globalgamemanagers'
 mabu: updating package entry 'bin/libil2cpp.so'
 mabu: updated package file '/Users/samhoud/Desktop/HelloMagic/HelloMagic/.out/com.samhoud.placement.mpk'

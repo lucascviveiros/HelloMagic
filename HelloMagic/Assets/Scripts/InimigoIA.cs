@@ -5,7 +5,7 @@ using UnityEngine;
 public class InimigoIA : MonoBehaviour {
 	
 	public Transform myTransform;
-	public GameObject player;
+	private GameObject player;
 	public float f_MoveSpeed = 8.0f;
 
 	public GameObject bulletPrefab;

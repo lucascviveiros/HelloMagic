@@ -13,6 +13,7 @@ ScriptsOnlyBuild:
     - MagicLeap.PlaceFromCamera
     - MagicLeap.VideoError
     - PlaneRecognition
+    - PlanetsController
     - Ship
     - ShipInput
     - ShipPhysics
@@ -146,9 +147,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11644}
     - Class: 114
-      Script: {instanceID: 11662}
+      Script: {instanceID: 11646}
     - Class: 114
-      Script: {instanceID: 11768}
+      Script: {instanceID: 11664}
+    - Class: 114
+      Script: {instanceID: 11770}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -864,7 +867,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: a071cf1170017a476db9858d13884579
+      Hash: ab643c4f6331a94db58b323c3266ba49
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DragObjectController
@@ -2136,13 +2139,19 @@ ScriptsOnlyBuild:
     className: Bala
   - hash:
       serializedVersion: 2
+      Hash: 24f900a563d5b8901ee979a88f452132
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlanetsController
+  - hash:
+      serializedVersion: 2
       Hash: b3c4d6d2ec3bf1231fdecd4daaab21da
     assemblyName: Assembly-CSharp.dll
     namespaceName: MagicLeap
     className: MediaPlayerButton
   - hash:
       serializedVersion: 2
-      Hash: 5a2d64447ea006a1775faf2c758558a1
+      Hash: 20a4df085a4d84d06381d950ce748116
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: InimigoIA

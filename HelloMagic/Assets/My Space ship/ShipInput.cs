@@ -5,13 +5,7 @@ using UnityEngine.XR.MagicLeap;
 /// Class specifically to deal with input.
 public class ShipInput : MonoBehaviour
 {
-    //[Tooltip("When true, the mouse and mousewheel are used for ship input and A/D can be used for strafing like in many arcade space sims.\n\nOtherwise, WASD/Arrows/Joystick + R/T are used for flying, representing a more traditional style space sim.")]
-    //public bool useMouseInput = false;
-    //[Tooltip("When using Keyboard/Joystick input, should roll be added to horizontal stick movement. This is a common trick in traditional space sims to help ships roll into turns and gives a more plane-like feeling of flight.")]
-    //public bool addRoll = true;
-
 	[Space]
-
     [Range(-0.5f, 0.5f)]
     public float pitch;
     [Range(-0.5f, 0.5f)]

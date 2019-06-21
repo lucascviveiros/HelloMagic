@@ -68,14 +68,7 @@ public class DragObjectController : MonoBehaviour
 
     private void DisablePoints() 
     {
-        //Array.ForEach(mySpherePoints, (GameObject obj) => Destroy(obj));
         Array.ForEach(mySpherePoints, (GameObject obj) => obj.SetActive(false));
-
-        /*
-        foreach (GameObject obj in mySpherePoints)
-        {
-            obj.SetActive(false);
-        }*/
     }
 
     private void EnablePoints() 
@@ -114,11 +107,6 @@ public class DragObjectController : MonoBehaviour
         pos[13] = MLHands.Left.Wrist.Ulnar.Position;
         pos[14] = MLHands.Left.Center;
 
-        /*
-        pos[0] = MLHands.Left.Thumb.KeyPoints[0].Position;
-        pos[1] = MLHands.Left.Index.KeyPoints[0].Position;
-        pos[2] = MLHands.Left.Wrist.KeyPoints[0].Position;
-        */
         for (int k = 0; k < mySpherePoints.Length; k++) 
         {   
             mySpherePoints[k].transform.position = pos[k];

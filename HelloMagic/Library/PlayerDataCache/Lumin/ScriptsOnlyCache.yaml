@@ -867,7 +867,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: ab643c4f6331a94db58b323c3266ba49
+      Hash: cdfc5a60e655a9e2448cdcace70ef3fe
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DragObjectController

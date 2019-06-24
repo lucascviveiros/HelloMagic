@@ -17,22 +17,25 @@ public class DragObjectController : MonoBehaviour
     public GameObject myShipPrefab;
     private MLHandKeyPose[] gestures;
     public PlanetsController[] planetsController;
-
     public Vector3[] pos;
     public GameObject mySingleSphere;
     public GameObject[] mySpherePoints;
-
     public enum HandPoses { Ok, Finger, Thumb, OpenHandBack, Fist, NoPose };
     public HandPoses pose = HandPoses.NoPose;
-    private List<Transform> _pinkyFinger;
-
     private MLHand Hand;
+    private Color _myCubecolor = Color.red;
+    public GameObject _myCube, _myEye;
+    private Vector3 headlook;               // where you're looking
+
     private void Awake()
     {
         //Initiate Control
         MLInput.Start();
         _controller = MLInput.GetController(MLInput.Hand.Left);
-       // MLInput.OnControllerButtonDown += OnButtonDown;
+        // MLInput.OnControllerButtonDown += OnButtonDown;
+
+        //Initate Eyes
+        MLEyes.Start();
 
         //Initiate Hands
         MLHands.Start();
@@ -51,10 +54,36 @@ public class DragObjectController : MonoBehaviour
 
         MLHands.KeyPoseManager.EnableKeyPoses(gestures, true, false);
 
-        mySpherePoints = new GameObject[15];
-        pos = new Vector3[15];
+        mySpherePoints = new GameObject[16];
+        pos = new Vector3[16];
 
     }
+
+    void Start()
+    {
+        _camera = GameObject.Find("Main Camera");
+        _myUniverse = GameObject.Find("Universe");
+        myQuad = GameObject.Find("Quad");
+        myTextFlag.text = "1 - Use your left hand to change the Universe position \n2 - Positive gesture for placing the Universe";
+        Time.timeScale = 0;
+        myFlag = false;
+        _instantiated = false;
+        _myUniverse.GetComponent<Collider>();
+        InitiatePoints();
+
+        _myCube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        _myCube.transform.localScale = new Vector3(0.03f, 0.03f, 0.03f);
+        _myCube.GetComponent<Renderer>().material.color = _myCubecolor;
+        _myCube.GetComponent<Collider>();
+        _myCube.name = "CUBO";
+
+        _myEye = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+        _myEye.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
+        _myEye.GetComponent<Renderer>().material.color = Color.green;
+        _myEye.GetComponent<Collider>();
+
+    }
+
 
     private void InitiatePoints() 
     {
@@ -79,33 +108,34 @@ public class DragObjectController : MonoBehaviour
         }
     }
 
-    private void ShowPoints()
+    private void TrackPoints()
     {
         //Pinky finger 
         pos[0] = MLHands.Left.Pinky.Tip.Position;
         pos[1] = MLHands.Left.Pinky.MCP.Position;
+        pos[2] = MLHands.Left.Pinky.PIP.Position;
 
         //Ring finger 
-        pos[2] = MLHands.Left.Ring.Tip.Position;
-        pos[3] = MLHands.Left.Ring.MCP.Position;
+        pos[3] = MLHands.Left.Ring.Tip.Position;
+        pos[4] = MLHands.Left.Ring.MCP.Position;
+        pos[5] = MLHands.Left.Ring.PIP.Position;
 
         //Middle finger
-        pos[4] = MLHands.Left.Middle.Tip.Position;
-        pos[5] = MLHands.Left.Middle.MCP.Position;
-        pos[6] = MLHands.Left.Middle.DIP.Position;
+        pos[6] = MLHands.Left.Middle.Tip.Position;
+        pos[7] = MLHands.Left.Middle.MCP.Position;
+        pos[8] = MLHands.Left.Middle.PIP.Position;
 
         //Index finger
-        pos[7] = MLHands.Left.Index.Tip.Position;
-        pos[8] = MLHands.Left.Index.MCP.Position;
-        pos[9] = MLHands.Left.Index.DIP.Position;
+        pos[9] = MLHands.Left.Index.Tip.Position;
+        pos[10] = MLHands.Left.Index.MCP.Position;
+        pos[11] = MLHands.Left.Index.PIP.Position;
 
         //Thumb finger
-        pos[10] = MLHands.Left.Thumb.Tip.Position;
-        pos[11] = MLHands.Left.Thumb.MCP.Position;
-        pos[12] = MLHands.Left.Thumb.CMC.Position;
+        pos[12] = MLHands.Left.Thumb.Tip.Position;
+        pos[13] = MLHands.Left.Thumb.MCP.Position;
+        pos[14] = MLHands.Left.Thumb.CMC.Position;
 
-        pos[13] = MLHands.Left.Wrist.Ulnar.Position;
-        pos[14] = MLHands.Left.Center;
+        pos[15] = MLHands.Left.Center;
 
         for (int k = 0; k < mySpherePoints.Length; k++) 
         {   
@@ -114,36 +144,45 @@ public class DragObjectController : MonoBehaviour
 
     }
 
-    void Start()
-    {  
-        _camera = GameObject.Find("Main Camera");
-        _myUniverse = GameObject.Find("Universe");
-        myQuad = GameObject.Find("Quad");
-        myTextFlag.text = "1 - Use your left hand to change the Universe position \n2 - Positive gesture for placing the Universe";
-        Time.timeScale = 0;
-        myFlag = false;
-        _instantiated = false;
-        _myUniverse.GetComponent<Collider>();
-        InitiatePoints();
-    }
-
     public void Update()
     {
-   
-        if (myFlag == false)
+        Time.timeScale = 1;
+        TrackPoints();
+        EnablePoints();
+
+        if (MLEyes.IsStarted)
+        {
+            headlook = MLEyes.FixationPoint - _camera.transform.position;
+
+            RaycastHit _hit;
+            if (Physics.Raycast(_camera.transform.position, headlook, out _hit))
+            {
+                _myEye.transform.position = _hit.point;
+                _myEye.transform.LookAt(_hit.normal + _hit.point);
+
+                if(_hit.collider.name == "CUBO") 
+                { 
+                    _myCube.transform.Rotate(Vector3.up, 3 * Time.deltaTime);
+                    _myCube.GetComponent<Renderer>().material.color = Color.blue;
+                    myFinger.text = "Colidiu!";
+                }
+            }
+        }
+
+
+        if (myFlag) 
+        {
+          _myUniverse.GetComponent<Collider>().enabled = false;
+          myQuad.SetActive(false);
+          Time.timeScale = 1;
+        }
+        else
         {
             _myUniverse.GetComponent<Collider>().enabled = true;
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
             myQuad.SetActive(true);
         }
-
-        if (myFlag == true) 
-        {
-            _myUniverse.GetComponent<Collider>().enabled = false;
-            myQuad.SetActive(false);
-            Time.timeScale = 1;
-        }
-
+       
         //Open hand back gesture for moving the Universe
         if (GetGesture(MLHands.Left, MLHandKeyPose.OpenHandBack))
         {
@@ -151,18 +190,18 @@ public class DragObjectController : MonoBehaviour
             _myUniverse.transform.rotation = _camera.transform.rotation;
             myHands.text = "OpenHandBack recognized";
             myFlag = false;
-            EnablePoints();
-            ShowPoints();
-        }
+            pose = HandPoses.OpenHandBack;
+            _myCube.transform.position = new Vector3(mySpherePoints[15].transform.position.x, mySpherePoints[15].transform.position.y + 0.1f, mySpherePoints[15].transform.position.z);
+            _myCube.transform.rotation = mySpherePoints[15].transform.rotation; 
 
+        }
         //Positive finger gesture for place the Universe
-        if (GetGesture(MLHands.Left, MLHandKeyPose.Thumb))
+        else if (GetGesture(MLHands.Left, MLHandKeyPose.Thumb))
         {
             _myUniverse.GetComponent<Collider>().enabled = false;
             myHands.text = "Thumb Gesture Recognized";
             myFlag = true;
-            EnablePoints();
-            ShowPoints();
+            pose = HandPoses.Thumb;
 
             if (_instantiated == false)
             {
@@ -176,12 +215,10 @@ public class DragObjectController : MonoBehaviour
             }
         }
 
-        if (GetGesture(MLHands.Left,MLHandKeyPose.NoHand)) 
+        else if (pose == HandPoses.NoPose || GetGesture(MLHands.Left, MLHandKeyPose.NoHand))
         {
             DisablePoints();
         }
-        //if (pose != HandPoses.NoPose) ShowPoints();
-
     }
 
 
@@ -214,7 +251,10 @@ public class DragObjectController : MonoBehaviour
     {
        // MLInput.OnControllerButtonDown -= OnButtonDown;
         MLInput.Stop();
-        MLHands.Stop();
+        if (MLHands.IsStarted)
+        {
+            MLHands.Stop();
+        }
     }
 
 }

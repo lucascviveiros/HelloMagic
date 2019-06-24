@@ -2,16 +2,16 @@
  "entries": [
   {
    "compression": 8,
-   "hash": "95dacc745879ae45ca74561459859089c920f2dc",
+   "hash": "1af1978b7c1af30f280d698d6f4968c59eb58093",
    "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
-   "size": 3313004,
+   "size": 3313168,
    "src": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
   },
   {
    "compression": 8,
-   "hash": "80c359006a8c3139ccae563612c5b3259dc7ab10",
+   "hash": "d3a6e371a1cbdebd1890fa00e28e6e2003fe742c",
    "pkgpath": "bin/libil2cpp.so",
-   "size": 49669176,
+   "size": 49673440,
    "src": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/Native/libil2cpp.so",
    "xfrm_flags": {
     "signed": {
@@ -23,9 +23,9 @@
      "version": 3
     }
    },
-   "xfrm_hash": "c8d76261fc8dea4f592f747fbbc687bc4935ea03",
+   "xfrm_hash": "2c698e49f02f40b00ced201795fbd7240a7ee48f",
    "xfrm_path": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/.out/.cache/debug_lumin_clang-3.8_aarch64/com.samhoud.placement-03b7aaf83c990733/libil2cpp.so-a191a587d7338062",
-   "xfrm_size": 49669934
+   "xfrm_size": 49674198
   },
   {
    "compression": 8,
@@ -158,23 +158,23 @@
   },
   {
    "compression": 8,
-   "hash": "75579a981ff68210dff58f4e2da65411d47d3c3b",
+   "hash": "483af1f652dd3f9d16b089d8fed8969285cd7e5b",
    "pkgpath": "Data/globalgamemanagers",
    "size": 50872,
    "src": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/globalgamemanagers"
   },
   {
    "compression": 8,
-   "hash": "b2946ea7549d0ee99901f4b5e2a4a5ff4ad25ae0",
+   "hash": "aac7c157fe7ef93595378621de47e0c9b2d1c361",
    "pkgpath": "Data/globalgamemanagers.assets",
    "size": 84576,
    "src": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/globalgamemanagers.assets"
   },
   {
    "compression": 8,
-   "hash": "c794f1ad4b68da1e6c19e229440e64c89457c324",
+   "hash": "3de0f3cd2bb0ef347b89701ecf61e28db8c5dead",
    "pkgpath": "Data/level0",
-   "size": 118984,
+   "size": 117600,
    "src": "/Users/samhoud/Desktop/HelloMagic/HelloMagic/Temp/StagingArea/Data/level0"
   },
   {
